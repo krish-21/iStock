@@ -1,4 +1,4 @@
-#Stock Trading 
+# Stock Trading 
 
 ### Note : This project is still under development ###
 
