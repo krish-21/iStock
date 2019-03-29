@@ -1,7 +1,8 @@
-##Stock Trading 
-#### Note : This project is still under development ###
+#Stock Trading 
 
-### Problem Statement : 
+### Note : This project is still under development ###
+
+## Problem Statement : 
 
 Finance is the most important economic sector in Hong Kong. Understanding finance is an enormous and cumbersome task. 
 
@@ -10,6 +11,7 @@ So we are here to help you out with one small part of it, Stocks!
 Here are two boring Wikipedia definitions on Stocks and Stock Markets :
 
 •The stock of a corporation is all of the shares into which ownership of the corporation is divided. - Wikipedia
+
 •A stock market, equity market or share market is the aggregation of buyers and sellers (a loose network of economic transactions, not a physical facility or discrete entity) of stocks (also called shares), which represent ownership claims on businesses.
 
 These explanations seem a tad boring. Don't lose faith though! 
@@ -17,7 +19,7 @@ These explanations seem a tad boring. Don't lose faith though!
 **iStock+ is here to help!**
 
 
-### Problem Setting : 
+## Problem Setting : 
 
 Introducing **iStock+**: Your personalised Stock Trading Program
 
