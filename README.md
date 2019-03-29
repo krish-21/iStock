@@ -1,7 +1,7 @@
-#Stock Trading 
-### Note : This project is still under development ###
+##Stock Trading 
+#### Note : This project is still under development ###
 
-## Problem Statement : 
+### Problem Statement : 
 
 Finance is the most important economic sector in Hong Kong. Understanding finance is an enormous and cumbersome task. 
 
@@ -17,7 +17,7 @@ These explanations seem a tad boring. Don't lose faith though!
 **iStock+ is here to help!**
 
 
-## Problem Setting : 
+### Problem Setting : 
 
 Introducing **iStock+**: Your personalised Stock Trading Program
 
