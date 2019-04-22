@@ -1,4 +1,6 @@
+#include "User_Class.h"
 #include<iostream>
+#include<string>
 
 using namespace std;
 
@@ -12,8 +14,10 @@ void print_dashboard()
 
     cout<<"Current Net Worth : "<<endl<<endl;
 
-    cout<<"Money in Wallet : "<<endl;
+    cout<<"Money in Wallet : "/* object.get_Walltet_Balance()*/<<endl;
 
-    cout<<"Current Stocks owned : "<<endl;
+    cout<<"Current Stocks owned : "<<endl; 
+    
+    //object.print_stocks(); 
 
 }

@@ -1,11 +1,11 @@
-#ifndef User_h
-#define User_h
+#ifndef Investor_h
+#define Investor_h
 
 #include<string>
 
 using namespace std;
 
-Class User
+Class Investor
 {
     public:
     
@@ -13,11 +13,12 @@ Class User
     void set_NetWorth();
     void set_Wallet_Balance();
     void set_credit_limit();
-
+ 
     double get_NetWorth();
     double get_Wallet_Balance();
+    void print_stocks();
     
-    bool add_money_to_wallet(double);
+    void add_money_to_wallet(double);
     bool is_credit_available();
     bool buy_Stock();
     void sell_Stock();

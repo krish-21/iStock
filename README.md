@@ -21,9 +21,9 @@ These explanations seem a tad boring. Don't lose faith though!
 
 ## Problem Setting : 
 
-Introducing **iStock+**: Your personalised Stock Trading Program
+Introducing **iStock+**: Your personalised Stock Trading Simulator
 
-iStock+ is a program which will let you buy and sell stocks of different big companies in the likes of Apple, Google and Amazon.
+iStock+ is a program which will let you buy and sell stocks of 5 tech giants : Apple, Google, Amazon, Facebook & Microsoft.
 
 **iStock plus has a nummber of features-** 
 
