@@ -8,6 +8,11 @@
 int main()
 {
     
-    vector <Investor> Invesor_Array;
+    vector <Investor> Investor_Array;
+
+    display();
+
+    print_dashboard(Investor_Array);
+
     return 0;
 }
