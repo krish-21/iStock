@@ -1,4 +1,4 @@
-#include "Investor_Class.h"
+#include "investor_class.h"
 #include <vector>
 
 bool Buy_Stock(Investor, vector <double>);

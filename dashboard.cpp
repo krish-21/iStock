@@ -1,4 +1,4 @@
-#include "Investor_Class.h"
+#include "investor_class.h"
 #include <iostream>
 #include <string>
 

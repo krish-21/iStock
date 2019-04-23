@@ -1,4 +1,4 @@
-#include "Investor_Class.h"
+#include "investor_class.h"
 #include <vector>
 #include <iostream>
 
@@ -10,7 +10,7 @@ bool Buy_Stock(Investor user, vector <double> Stock_Vector)
         return false;
     }
 
-
+    return true;
         
 }
 
@@ -23,6 +23,6 @@ bool Sell_Stock(Investor user, vector <double> Stock_Vector)
         return false;
     }
 
-
+    return true;
 
 }

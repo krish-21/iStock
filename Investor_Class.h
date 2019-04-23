@@ -1,7 +1,7 @@
 #ifndef Investor_h
 #define Investor_h
 
-#include<string>
+#include <string>
 
 using namespace std;
 
