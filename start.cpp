@@ -12,16 +12,6 @@ struct users
 	string password;
 };
 
-void display()
-{
-	cout<<"Welcome to abcd"<<endl;
-	cout<<"1- Create New Account"<<endl;
-	cout<<"2- Login"<<endl;
-	int n;
-	cin>>n;
-	newuser(n);
-}
-
 bool newuser(int n)
 {
 	if(n==1)
@@ -101,8 +91,12 @@ bool newuser(int n)
 	}
 }
 
-		
-		
-	
-	
-	
+void display()
+{
+	cout<<"Welcome to abcd"<<endl;
+	cout<<"1- Create New Account"<<endl;
+	cout<<"2- Login"<<endl;
+	int n;
+	cin>>n;
+	newuser(n);
+}

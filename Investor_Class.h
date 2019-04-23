@@ -5,38 +5,36 @@
 
 using namespace std;
 
-Class Investor
+class Investor
 {
     public:
     
-    void set_Name(string);
-    void set_NetWorth();
-    void set_Wallet_Balance();
-    void set_credit_limit();
+    void set_name(string);
+    void set_net_worth(double);
+    void set_wallet_balance(double);
+    void set_credit_limit(double);
  
-    double get_NetWorth();
-    double get_Wallet_Balance();
+    double get_net_worth();
+    double get_wallet_balance();
+    double get_credit_balance();
     void print_stocks();
     
-    void add_money_to_wallet(double);
-    bool is_credit_available();
-    bool buy_Stock();
-    void sell_Stock();
-    
+    bool add_money_to_wallet(double);
+
 
     private:
 
-    string Name;
+    string name;
 
-    double NetWorth;
-    double Wallet_Balance;
+    double net_worth;
+    double wallet_balance;
     double credit_limit;
     double in_transfer_money;
 
-    double my_Apple;
-    double my_Google;
-    double my_Amazon;
-    double my_Facebook;
-    double my_Microsoft;
+    double my_stock_1;
+    double my_stock_2;
+    double my_stock_3;
+    double my_stock_4;
+    double my_stock_5;
 
 };
