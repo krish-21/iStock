@@ -17,9 +17,11 @@ class Investor
     double get_net_worth();
     double get_wallet_balance();
     double get_credit_balance();
+    double get_my_stock(int);
     void print_stocks();
     
     bool add_money_to_wallet(double);
+    void buy_my_stock(int, double);
 
 
     private:
