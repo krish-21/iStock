@@ -3,7 +3,10 @@
 #include <string>
 #include <fstream>
 #include <iomanip>
+#include "stock_manipulation.h"
+
 using namespace std;
+
 void share_manipulation()
 {
 	string companyname[5]={"Google","Apple","Microsoft","Facebook","Amazon"};
