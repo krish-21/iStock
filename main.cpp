@@ -1,6 +1,9 @@
 #include <iostream>
 #include <string>
 #include <vector>
+#include <cmath>
+#include <iomanip>
+#include <fstream>
 #include "investor_class.h"
 #include "start.h"
 #include "dashboard.h"
@@ -26,6 +29,8 @@ int main()
         share_manipulation();
 
         read_shares_into_array(stock_array);
+
+        set_the_credit_limit(user);
 
         if(day%5==0)
         {

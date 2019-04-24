@@ -8,6 +8,8 @@ using namespace std;
 class Investor
 {
     public:
+
+    Investor();
     
     void set_name(string);
     void set_net_worth(double);

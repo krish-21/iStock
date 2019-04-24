@@ -15,6 +15,9 @@ struct users
 
 bool newuser(int n)
 {
+	
+	label1:
+	
 	if(n==1)
 	{
 		users newuser;
@@ -35,6 +38,7 @@ bool newuser(int n)
 		foutusers.close();
 		return true;
 	}
+	
 	else if(n==2)
 	{
 		string uid,password;
@@ -90,6 +94,13 @@ bool newuser(int n)
 			}
 		}
 	}
+
+	else
+	{
+		cout<<"Invalid input"<<endl<<endl;
+		goto label1;
+	}
+	
 }
 
 void display()

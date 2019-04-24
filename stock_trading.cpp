@@ -6,7 +6,7 @@
 
 using namespace std;
 
-void buy_stock(Investor user, double stock_array[5], string stock_names[5], int day)
+void buy_stock(Investor &user, double stock_array[5], string stock_names[5], int day)
 {
     
     if(user.get_wallet_balance() == 0)
@@ -42,7 +42,7 @@ void buy_stock(Investor user, double stock_array[5], string stock_names[5], int 
         
 }
 
-void sell_stock(Investor user, double stock_array[5], string stock_names[5], int day)
+void sell_stock(Investor &user, double stock_array[5], string stock_names[5], int day)
 {
     if(user.get_net_worth() == 0)
     {
@@ -99,7 +99,7 @@ void sell_stock(Investor user, double stock_array[5], string stock_names[5], int
 
 }
 
-void trade_stocks(Investor user, double stock_array[5], string stock_names[5], int day)
+void trade_stocks(Investor &user, double stock_array[5], string stock_names[5], int day)
 {
     char a, ans = 'y';
     

@@ -5,9 +5,9 @@
 
 using namespace std;
 
-char print_dashboard(Investor user)
+char print_dashboard(Investor &user)
 {
-    int a;
+    char a;
     
     cout<<"***********************************************************************";
     cout<<"***********************************************************************";

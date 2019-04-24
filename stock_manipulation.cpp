@@ -36,8 +36,6 @@ void share_manipulation()
 
 	srand(time(NULL));
 	
-	double difference;
-	
 	double random[]={1,-1,2,3,-1,-3,1,5,-4,-1,-2,2,-5,4,-3,-2,1,-1,3,-2,1,2};
 	
 	for(int i=0;i<5;i++)
@@ -107,7 +105,7 @@ void share_manipulation()
 		}
 		
 	}
-	delete shareprice;
+	delete [] shareprice;
 	foutshares.open("shares.txt",ios::app);
 	if(foutshares.fail())
 	{
@@ -124,7 +122,7 @@ void share_manipulation()
 		}
 	}
 	foutshares.close();
-	delete changedshareprice;
+	delete [] changedshareprice;
 }
 
 void read_shares_into_array(double stock_array[5])

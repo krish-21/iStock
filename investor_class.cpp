@@ -4,12 +4,17 @@
 
 using namespace std;
 
-Investor::Investor()
+Investor::Investor(void)
 {
     net_worth=0;
     wallet_balance=0;
     total_transferred_money=0;
     temp_transferred_money=0;
+    my_stocks[0]=0;
+    my_stocks[1]=0;
+    my_stocks[2]=0;
+    my_stocks[3]=0;
+    my_stocks[4]=0;
 }
 
 void Investor::set_name(string input)

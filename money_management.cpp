@@ -2,7 +2,7 @@
 #include "investor_class.h"
 #include "money_management.h"
 
-void set_the_credit_limit(Investor user)
+void set_the_credit_limit(Investor &user)
 {
     double limit;
 
@@ -12,7 +12,7 @@ void set_the_credit_limit(Investor user)
     user.set_credit_limit(limit);
 }
 
-void adding_money(Investor user)
+void adding_money(Investor &user)
 {
     char ans='y';
     double money_to_add;
