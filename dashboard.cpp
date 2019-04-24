@@ -30,7 +30,7 @@ char print_dashboard(Investor user)
     cout<<"Press \"a\" to add money to wallet"<<endl<<endl;
     cout<<"Press \"s\" to begin Stock Trading"<<endl<<endl;
     cout<<"Press \"n\" to proceed to next day"<<endl<<endl;
-    cout<<"Press any other key to exit the program"<<endl<<endl;
+    cout<<"Press \"e\" to exit the program"<<endl<<endl;
 
     cin>>a;
 
