@@ -1,11 +1,12 @@
-#include "investor_class.h"
 #include <vector>
 #include <iostream>
 #include <fstream>
+#include "investor_class.h"
+#include "stock_trading.h"
 
 using namespace std;
 
-bool Buy_Stock(Investor user, vector <vector <double> > Stock_Vector)
+bool Buy_Stock(Investor user/*, ___________________*/)
 {
     char ans='y';
     int n;
@@ -27,7 +28,7 @@ bool Buy_Stock(Investor user, vector <vector <double> > Stock_Vector)
         cout<<"How much do you want to spend ? :   ";
         cin>>purachse_amount;
 
-        no_of_stocks = purachse_amount /  Stock_Vector[n].back();
+        //no_of_stocks = purachse_amount /  _____________;
 
         cout<<"No of stocks = "<<no_of_stocks<<endl<<endl;
 
@@ -44,14 +45,11 @@ bool Buy_Stock(Investor user, vector <vector <double> > Stock_Vector)
 
     }
     
-    
-
-
     return true;
         
 }
 
-bool Sell_Stock(Investor user, vector <double> Stock_Vector)
+bool Sell_Stock(Investor user/*, _________________*/)
 {
     if(user.get_net_worth() == 0)
     {

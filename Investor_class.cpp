@@ -8,6 +8,8 @@ Investor::Investor()
 {
     net_worth=0;
     wallet_balance=0;
+    total_transferred_money=0;
+    temp_transferred_money=0;
 }
 
 void Investor::set_name(string input)
@@ -30,6 +32,11 @@ void Investor::set_credit_limit(double input)
     credit_limit = input;
 }
 
+void Investor::reset_credit_balance()
+{
+    temp_transferred_money=0;
+}
+
 double Investor::get_net_worth()
 {
     return net_worth;
@@ -42,21 +49,21 @@ double Investor::get_wallet_balance()
 
 double Investor::get_credit_balance()
 {
-    return (credit_limit - in_transfer_money);
+    return (credit_limit - temp_transferred_money);
 }
 
-double Investor::get_my_stock(int n)
+/*double Investor::get_my_stock(int n)
 {
     return my_stock[n-1];
-}
+}*/
 
-void Investor::print_stocks()
+void Investor::print_my_stocks()
 {
-    cout<<"Apple     : "<<my_stock[0]<<endl;
-    cout<<"Google    : "<<my_stock[1]<<endl;
-    cout<<"Amazon    : "<<my_stock[2]<<endl;
-    cout<<"Facebook  : "<<my_stock[3]<<endl;
-    cout<<"Microsoft : "<<my_stock[4]<<endl;
+    cout<<"Alphabet  : "<<my_stocks[0]<<endl;
+    cout<<"Apple     : "<<my_stocks[1]<<endl;
+    cout<<"Microsoft : "<<my_stocks[2]<<endl;
+    cout<<"Facebook  : "<<my_stocks[3]<<endl;
+    cout<<"Amazon    : "<<my_stocks[4]<<endl;
 }
 
 bool Investor::add_money_to_wallet(double input)
@@ -69,7 +76,7 @@ bool Investor::add_money_to_wallet(double input)
         
     label1:
 
-    if(in_transfer_money + input > credit_limit)
+    if(temp_transferred_money + input > credit_limit)
     {
         cout<<"Cannot transfer above credit limit, please try again"<<endl<<endl;
         cout<<"Press 0 to exit money adding function"<<endl<<endl;
@@ -87,7 +94,9 @@ bool Investor::add_money_to_wallet(double input)
         
     }
     
-    in_transfer_money += input;
+    temp_transferred_money += input;
+
+    total_transferred_money += input;
 
     wallet_balance += input;
 
@@ -97,15 +106,15 @@ bool Investor::add_money_to_wallet(double input)
 bool Investor::buy_my_stock(int n, double input)
 {
           
-    if(my_stock[n-1] + input <=100)
+    if(my_stocks[n-1] + input <=100)
     {
-        my_stock[n-1] += input;
+        my_stocks[n-1] += input;
             return true;
     }
             
     else
     {
-        cout<<"Cannot own more than 100 percentof company"<<endl<<endl;
+        cout<<"Cannot own more than 100 percent of company !"<<endl<<endl;
         return false;
     }
 
