@@ -23,3 +23,8 @@ stock_manipulation.o: stock_manipulation.cpp stock_manipulation.h
 
 stock_trading.o: stock_trading.cpp stock_trading.h investor_class.h
 	g++ -pedantic-errors -std=c++11 -c $<
+
+clean:
+	rm main $(Objects)
+
+.PHONY: clean
