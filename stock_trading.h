@@ -1,8 +1,8 @@
 #include "investor_class.h"
 #include <vector>
 
-void trade_stocks(Investor, vector <double>);
+void trade_stocks(Investor, double [], string [], int);
 
-bool Buy_Stock(Investor, vector <double>);
+void buy_stock(Investor, double [], string [], int);
 
-bool Sell_Stock(Investor, vector <double>);
+void sell_stock(Investor, double [], string [], int);

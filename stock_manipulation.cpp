@@ -18,7 +18,7 @@ void share_manipulation()
 	ifstream finshares;
 	ofstream foutshares;
 	
-	finshares.open("shares.txt",ios::app);
+	finshares.open("shares.txt");
 	
 	if(finshares.fail())
 	{
@@ -127,3 +127,33 @@ void share_manipulation()
 	delete changedshareprice;
 }
 
+void read_shares_into_array(double stock_array[5])
+{
+	double stock;
+	ifstream fin;
+	
+	fin.open("shares.txt");
+
+	if(fin.fail())
+	{
+		cout<<"Unable to open shares.txt"<<endl;
+		exit(1);
+	}
+
+	fin.seekg(-36,ios_base::end);
+
+	for(int i=0; i<5; ++i)
+	{
+		fin>>stock;
+		stock_array[i]=stock;
+	}
+}
+
+void print_stocks(double stock_array[5], string stock_names[5])
+{
+	for(int i=0; i<5; ++i)
+	{
+		cout<<stock_names[i]<<" : "<<stock_array[i]<<endl;
+	}
+	
+}

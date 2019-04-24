@@ -6,7 +6,7 @@
 #include "dashboard.h"
 #include "money_management.h"
 #include "stock_trading.h"
-//#include "stock_manipulation.h"
+#include "stock_manipulation.h"
 
 using namespace std;
 
@@ -14,7 +14,8 @@ int main()
 {
     
     //vector <Investor> Investor_Vector;
-    vector <double> Stock_Vector;
+    double stock_array[5];
+    string stock_names[5]{"Google","Apple","Microsoft","Facebook","Amazon"};
     Investor user;
     int day=1;
 
@@ -22,7 +23,9 @@ int main()
 
     while(true)
     {
-        //stock_manipulation_function(Stock_Vector)
+        share_manipulation();
+
+        read_shares_into_array(stock_array);
 
         if(day%5==0)
         {
@@ -36,9 +39,10 @@ int main()
                 adding_money(user);
                 break;
             
-            case 's': // to trade stock
+            case 's':
             
-                trade_stocks(user, Stock_Vector);
+                print_stocks(stock_array, stock_names);
+                trade_stocks(user, stock_array, stock_names, day);
                 break;
                 
             case 'n':

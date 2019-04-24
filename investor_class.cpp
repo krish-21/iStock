@@ -52,10 +52,10 @@ double Investor::get_credit_balance()
     return (credit_limit - temp_transferred_money);
 }
 
-/*double Investor::get_my_stock(int n)
+double Investor::get_my_stock(int n)
 {
-    return my_stock[n-1];
-}*/
+    return my_stocks[n-1];
+}
 
 void Investor::print_my_stocks()
 {
@@ -66,7 +66,7 @@ void Investor::print_my_stocks()
     cout<<"Amazon    : "<<my_stocks[4]<<endl;
 }
 
-bool Investor::add_money_to_wallet(double input)
+void Investor::add_money_to_wallet(double input)
 {
     if(get_credit_balance() == 0)
     {
@@ -84,7 +84,7 @@ bool Investor::add_money_to_wallet(double input)
         
         if(input == 0)
         {
-            return false;
+            return;
         }
         
         else
@@ -103,19 +103,14 @@ bool Investor::add_money_to_wallet(double input)
     
 }
 
-bool Investor::buy_my_stock(int n, double input)
+void Investor::buy_my_stock(int n, double no_of_stocks, double amount_spent)
 {
-          
-    if(my_stocks[n-1] + input <=100)
-    {
-        my_stocks[n-1] += input;
-            return true;
-    }
-            
-    else
-    {
-        cout<<"Cannot own more than 100 percent of company !"<<endl<<endl;
-        return false;
-    }
+    my_stocks[n-1] += no_of_stocks;
+    wallet_balance -= amount_spent;
+}
 
+void Investor::sell_my_stock(int n, double no_of_stocks, double sale_amount)
+{
+    my_stocks[n-1] -= no_of_stocks;
+    wallet_balance += sale_amount;
 }
