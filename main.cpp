@@ -9,8 +9,8 @@
 #include "set_up_screen.h"
 #include "dashboard.h"
 #include "money_management.h"
-#include "stock_trading.h"
 #include "stock_manipulation.h"
+#include "stock_trading.h"
 #include "search_data.h"
 
 using namespace std;
@@ -22,6 +22,7 @@ int main()
     string stock_names[5]{"Google","Apple","Microsoft","Facebook","Amazon"};
     Investor user;
     int day=1;
+    char action, ans = 'y';
 
     set_up_function(user);
     
@@ -39,8 +40,12 @@ int main()
         }
 
         calculate_net_worth(user, stock_array);
+
+        label1:
         
-        switch(print_dashboard(user, day))
+        action = print_dashboard(user, day);
+        
+        switch(action)
         {
             case 'a':
 
@@ -56,9 +61,10 @@ int main()
             case 't':
 
                 search_records();
-
+                break;
+            
             case 'n':
-
+                cout<<"Proceeding to the next day"<<endl<<endl;
                 break;
 
             case 'e':
@@ -69,8 +75,21 @@ int main()
                 break;
             
             default:
-                
+                cout<<"Invalid input !"<<endl<<endl;
                 break;
+        }
+
+        if(action != 'n')
+        {
+            label2:
+
+            cout<<"Go back to Dashboard (y/n) ?";
+            cin>>ans;
+
+            if(ans=='y')
+                goto label1;
+            else
+                goto label2;
         }
         
         ++day;
