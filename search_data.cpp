@@ -34,7 +34,7 @@ void search_records()
 	cout<<"4- Shares Bought"<<endl;
 	cout<<"5- Shares Sold"<<endl;
 	cout<<"6- Day"<<endl;
-	cout<<"---------------------------------------"<<endl<<endl;
+	cout<<"---------------------------------------"<<endl;
 	cout<<"7- Exit Transaction History Mode"<<endl<<endl;
 	cout<<"Choose a value:"<<endl;
 	

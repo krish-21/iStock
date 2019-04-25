@@ -23,7 +23,8 @@ void share_manipulation()
 	
 	if(finshares.fail())
 	{
-		exit(1);
+		cout<<endl<<"Failed to open shares.txt"<<endl;
+		exit(0);
 	}
 	
 	finshares.seekg(-36,ios_base::end);
@@ -146,15 +147,4 @@ void read_shares_into_array(double stock_array[5])
 		fin>>stock;
 		stock_array[i]=stock;
 	}
-}
-
-void print_stocks(double stock_array[5], string stock_names[5])
-{
-	cout<<"Current Market Value of Stocks : "<<endl<<endl;
-
-	for(int i=0; i<5; ++i)
-	{
-		cout<<i+1<<". "<<stock_names[i]<<" : "<<stock_array[i]<<endl;
-	}
-	
 }

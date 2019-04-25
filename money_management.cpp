@@ -7,8 +7,10 @@ void set_the_credit_limit(Investor &user)
 {
     double limit;
 
-    cout<<"Please set your credit limit";
+    cout<<"                               (Recommended to be at least 1000)"<<endl;
+    cout<<"Please set your credit limit : ";
     cin>>limit;
+    cout<<endl<<endl;
         
     user.set_credit_limit(limit);
 }
@@ -27,8 +29,9 @@ void adding_money(Investor &user)
 
     while(ans=='y')
     {
-        cout<<"How much money do you want to add to your wallet ?"<<endl;
-        cout<<"Please keep your credt limit in mind!"<<endl;
+        cout<<"How much money do you want to add to your wallet ?"<<endl<<endl;
+        cout<<"Please keep your credt limit in mind!        Credit Limit   =  "<<user.get_credit_limit()<<endl;
+        cout<<"                                             Credit Balance =  "<<user.get_credit_balance()<<endl;
         cout<<"Amount to add :  ";
 
         cin>>money_to_add;
@@ -41,7 +44,8 @@ void adding_money(Investor &user)
 
         else if(money_to_add == 0)
         {
-            cout<<"Cannot add zero  !"<<endl<<"Do you want to try again (y/n)?"<<endl;
+            cout<<endl;
+            cout<<"Cannot add zero  !"<<endl<<"Do you want to try again (y/n)?  ";
             cin>>ans;
         }
 
@@ -49,7 +53,8 @@ void adding_money(Investor &user)
         {
             if(money_to_add > user.get_credit_balance())
             {
-                cout<<"Cannot add zero  !"<<endl<<"Do you want to try again (y/n)?"<<endl;
+                cout<<endl;
+                cout<<"Cannot add exceed credit balance !"<<endl<<"Do you want to try again (y/n)?  ";
                 cin>>ans;
             }
 
@@ -61,7 +66,7 @@ void adding_money(Investor &user)
         }
     }
 
-    cout<<endl<<endl<<"Money successfully added to Wallet !"<<endl<<endl;
+    cout<<endl<<endl<<money_to_add<<"USD successfully added to Wallet !"<<endl<<endl;
 }
 
 void calculate_net_worth(Investor &user, double stock_srray[5])

@@ -22,7 +22,7 @@ int main()
     string stock_names[5]{"Google","Apple","Microsoft","Facebook","Amazon"};
     Investor user;
     int day=1;
-    char action, ans = 'y';
+    char action, ans = 'y', pause;
 
     set_up_function(user);
     
@@ -49,12 +49,13 @@ int main()
         {
             case 'a':
 
+                cout<<endl<<endl;
                 adding_money(user);
                 break;
             
             case 's':
             
-                print_stocks(stock_array, stock_names);
+                cout<<endl<<endl;
                 trade_stocks(user, stock_array, stock_names, day);
                 break;
                 
@@ -81,18 +82,20 @@ int main()
 
         if(action != 'n')
         {
-            label2:
-
-            cout<<"Go back to Dashboard (y/n) ?";
+            cout<<"Proceed to the nexr day (y/n) ?  ";
+            cout<<endl<<endl;
             cin>>ans;
 
-            if(ans=='y')
+            if(ans !='y')
                 goto label1;
-            else
-                goto label2;
         }
         
+        cout<<"#############################"<<"Proceeding to the next day"<<"#############################"<<endl<<endl<<endl;
         ++day;
+
+        cout<<"Enter \"c\" to continue  ";
+        cin>>pause;
+        cout<<"\b";
     }
 
     return 0;

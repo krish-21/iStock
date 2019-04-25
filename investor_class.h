@@ -20,6 +20,7 @@ class Investor
     string get_name();
     double get_net_worth();
     double get_wallet_balance();
+    double get_credit_limit();
     double get_credit_balance();
     double get_temp_transferred_money();
     double get_my_stock(int);

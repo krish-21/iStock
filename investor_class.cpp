@@ -58,6 +58,11 @@ double Investor::get_wallet_balance()
     return wallet_balance;
 }
 
+double Investor::get_credit_limit()
+{
+    return credit_limit;
+}
+
 double Investor::get_credit_balance()
 {
     return (credit_limit - temp_transferred_money);

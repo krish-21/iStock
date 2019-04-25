@@ -10,11 +10,10 @@ char print_dashboard(Investor &user, int day)
 {
     char a;
     
-    cout<<"***********************************************************************";
-    cout<<"***********************************************************************";
+    cout<<"*****************************************---DASHBOARD---*****************************************";
     cout<<endl<<endl;
 
-    cout<<user.get_name()<<"'s Portfolio :                             Day "<<day<<endl<<endl<<endl;
+    cout<<user.get_name()<<"'s Portfolio :                                         Day "<<day<<endl<<endl<<endl;
 
     cout<<"Net Worth : "<<user.get_net_worth()<<endl<<endl;
 
@@ -33,6 +32,7 @@ char print_dashboard(Investor &user, int day)
     cout<<"Press \"n\" to proceed to next day"<<endl<<endl;
     cout<<"Press \"e\" to exit the program"<<endl<<endl;
 
+    cout<<"Action :  ";
     cin>>a;
 
     return a;

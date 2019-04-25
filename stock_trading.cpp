@@ -1,4 +1,3 @@
-#include <vector>
 #include <iostream>
 #include <fstream>
 
@@ -20,10 +19,8 @@ void buy_stock(Investor &user, double stock_array[5], string stock_names[5], int
     double purchase_amount, no_of_stocks;
     char ans = 'y';
 
-    string temp_filename = "records"; //uid from main whch will come from display()
-    string filename = temp_filename + ".txt";
     ofstream fout;
-    fout.open(filename, ios::app);
+    fout.open("records.txt", ios::app);
 
     label1:
 
@@ -35,8 +32,8 @@ void buy_stock(Investor &user, double stock_array[5], string stock_names[5], int
 
     if(n<1 || n>5)
     {
-        cout<<"Invalid input";
-        cout<<"Do you want to try again (y/n) ?"<<endl;
+        cout<<"Invalid input"<<endl<<endl;
+        cout<<"Do you want to try again (y/n) ?  ";
         cin>>ans;
 
         if(ans == 'y')
@@ -52,13 +49,13 @@ void buy_stock(Investor &user, double stock_array[5], string stock_names[5], int
 
     cout<<endl;
 
-    cout<<"How many stocks of "<<stock_names[n-1]<<" do you want to buy ?"<<endl<<endl;
+    cout<<"How many stocks of "<<stock_names[n-1]<<" do you want to buy ?  ";
     cin>>no_of_stocks;
 
     if(no_of_stocks < 0)
     {
-        cout<<"Cannot buy negative number of stocks !"<<endl;
-        cout<<"Do you want tot try again (y/n) ?"<<endl;
+        cout<<"Cannot buy negative number of stocks !"<<endl<<endl;
+        cout<<"Do you want tot try again (y/n) ?  ";
         cin>>ans;
 
         if(ans == 'y')
@@ -66,15 +63,15 @@ void buy_stock(Investor &user, double stock_array[5], string stock_names[5], int
     
          else
         {
-            cout<<"Exiting Selling Mode..."<<endl<<endl;
+            cout<<"Exiting Buying Mode..."<<endl<<endl;
             return;
         }
     }
     
     else if(no_of_stocks == 0)
     {
-        cout<<"Cannot buy zero stocks !"<<endl;
-        cout<<"Do you want tot try again (y/n) ?"<<endl;
+        cout<<"Cannot buy zero stocks !"<<endl<<endl;
+        cout<<"Do you want tot try again (y/n) ?  ";
         cin>>ans;
 
         if(ans == 'y')
@@ -91,8 +88,8 @@ void buy_stock(Investor &user, double stock_array[5], string stock_names[5], int
 
     if(purchase_amount > user.get_wallet_balance())
     {
-        cout<<"Insufficient Wallet Balance !"<<endl;
-        cout<<"Do you want tot try again (y/n) ?"<<endl;
+        cout<<"Insufficient Wallet Balance !"<<endl<<endl;
+        cout<<"Do you want tot try again (y/n) ?  ";
         cin>>ans;
 
         if(ans == 'y')
@@ -105,12 +102,12 @@ void buy_stock(Investor &user, double stock_array[5], string stock_names[5], int
         }
     }
 
-    cout<<"No of stocks bought = "<<no_of_stocks<<endl<<endl;
+    cout<<"No of stocks bought = "<<no_of_stocks<<endl;
     cout<<"Amount Spent = "<<purchase_amount<<endl<<endl;
 
     user.buy_my_stock(n, no_of_stocks, purchase_amount);
         
-    cout<<"Stock purchase successful"<<endl<<endl;
+    cout<<"Purchase of "<<stock_names[n-1]<<" successful"<<endl<<endl<<endl;
     fout<<"B"<<" "<<purchase_amount<<" "<<no_of_stocks<<" "<<stock_names[n-1]<<" "<<stock_array[n-1]<<" "<<day<<endl;
 
     fout.close();
@@ -121,7 +118,7 @@ void sell_stock(Investor &user, double stock_array[5], string stock_names[5], in
 {
     if(user.get_net_worth() == 0)
     {
-        cout << "You do not own anything valuable to sell !!!" << endl;
+        cout << "You do not own anything valuable to sell !!!" << endl<<endl;
         cout << "Please increase your networth to start selling" << endl << endl;
         return;
     }
@@ -130,7 +127,7 @@ void sell_stock(Investor &user, double stock_array[5], string stock_names[5], in
     int n;
     double sale_amount, no_of_stocks;
 
-    string temp_filename = "records"; //uid from main whch will come from display()
+    string temp_filename = "records";
     string filename = temp_filename + ".txt";
     ofstream fout;
     fout.open(filename, ios::app);
@@ -213,6 +210,13 @@ void trade_stocks(Investor &user, double stock_array[5], string stock_names[5], 
     
     cout<<"********************************************* Stock Trading Mode *********************************************"<<endl<<endl;
     
+    cout<<"Current Market Value of Stocks : "<<endl<<endl;
+
+	for(int i=0; i<5; ++i)
+	{
+		cout<<i+1<<". "<<stock_names[i]<<" : "<<stock_array[i]<<endl;
+	}
+
     while(ans == 'y')
     {
         cout<<"Press \"b\" to buy stocks"<<endl<<"Press \"s\" to sell stocks"<<endl<<"Press any other key to exit Stock Trading Mode"<<endl<<endl;
