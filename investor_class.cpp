@@ -42,6 +42,11 @@ void Investor::reset_credit_balance()
     temp_transferred_money=0;
 }
 
+string Investor::get_name()
+{
+    return name;
+}
+
 double Investor::get_net_worth()
 {
     return net_worth;
@@ -57,9 +62,14 @@ double Investor::get_credit_balance()
     return (credit_limit - temp_transferred_money);
 }
 
+double Investor::get_temp_transferred_money()
+{
+    return temp_transferred_money;
+}
+
 double Investor::get_my_stock(int n)
 {
-    return my_stocks[n-1];
+    return my_stocks[n];
 }
 
 void Investor::print_my_stocks()
@@ -73,39 +83,11 @@ void Investor::print_my_stocks()
 
 void Investor::add_money_to_wallet(double input)
 {
-    if(get_credit_balance() == 0)
-    {
-        cout<<"Max Credit reached"<<endl;
-        cout<<"Cannot add any more money"<<endl<<endl;
-    }
-        
-    label1:
-
-    if(temp_transferred_money + input > credit_limit)
-    {
-        cout<<"Cannot transfer above credit limit, please try again"<<endl<<endl;
-        cout<<"Press 0 to exit money adding function"<<endl<<endl;
-        cin>>input;
-        
-        if(input == 0)
-        {
-            return;
-        }
-        
-        else
-        {
-            goto label1;
-        }
-        
-    }
-    
     temp_transferred_money += input;
 
     total_transferred_money += input;
 
     wallet_balance += input;
-
-    
 }
 
 void Investor::buy_my_stock(int n, double no_of_stocks, double amount_spent)

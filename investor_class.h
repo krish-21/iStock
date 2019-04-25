@@ -17,9 +17,11 @@ class Investor
     void set_credit_limit(double);
     void reset_credit_balance();
  
+    string get_name();
     double get_net_worth();
     double get_wallet_balance();
     double get_credit_balance();
+    double get_temp_transferred_money();
     double get_my_stock(int);
     void print_my_stocks();
     

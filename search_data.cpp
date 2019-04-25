@@ -2,7 +2,7 @@
 #include <string>
 #include <fstream>
 #include <iomanip>
-//#include "search_data.h"
+#include "search_data.h"
 
 using namespace std;
 
@@ -16,12 +16,14 @@ struct searchuser
 	int day;
 };
 
-int main()
+void search_records()
 {
-	string name;
-	cin>>name;
-	string filename=name+".txt";
-	cout<<filename<<endl;
+	string filename = "records.txt";
+	//cin>>name;
+	//string filename=name+".txt";
+	//cout<<filename<<endl;
+	
+	cout<<"******************************************* Transaction History *******************************************"<<endl<<endl;
 	
 	cout<<"You can search on these criteria-"<<endl;
 	cout<<"---------------------------------------"<<endl;
@@ -31,13 +33,14 @@ int main()
 	cout<<"4- Shares Bought"<<endl;
 	cout<<"5- Shares Sold"<<endl;
 	cout<<"6- Day"<<endl;
-	cout<<"---------------------------------------"<<endl;
+	cout<<"---------------------------------------"<<endl<<endl;
+	cout<<"7- Exit Transaction History Mode"<<endl<<endl;
 	cout<<"Choose a value:"<<endl;
-
+	
 	int n;
 	cin>>n;
 	
-	while(n<0 || n>6)
+	while(n<0 || n>7)
 	{
 		cout<<"Invalid Input"<<endl;
 		cout<<"Enter Number Again:"<<endl;
@@ -333,6 +336,12 @@ int main()
 		{
 			cout<<"No shares found"<<endl;
 		}
+	}
+
+	else if(n==7)
+	{
+		cout<<endl<<endl<<"Exiting Transaction History Mode..."<<endl<<endl;
+		return;
 	}
 	delete [] uservalues;
 }

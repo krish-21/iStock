@@ -1,1 +1,1 @@
-void search(string);
+void search_records();

@@ -4,25 +4,28 @@
 #include <cmath>
 #include <iomanip>
 #include <fstream>
+
 #include "investor_class.h"
-#include "start.h"
+#include "set_up_screen.h"
 #include "dashboard.h"
 #include "money_management.h"
 #include "stock_trading.h"
 #include "stock_manipulation.h"
+#include "search_data.h"
 
 using namespace std;
 
 int main()
 {
     
-    //vector <Investor> Investor_Vector;
     double stock_array[5];
     string stock_names[5]{"Google","Apple","Microsoft","Facebook","Amazon"};
     Investor user;
     int day=1;
 
-    display();
+    set_up_function(user);
+    
+    set_the_credit_limit(user);
 
     while(true)
     {
@@ -30,17 +33,17 @@ int main()
 
         read_shares_into_array(stock_array);
 
-        set_the_credit_limit(user);
-
         if(day%5==0)
         {
             user.reset_credit_balance();
         }
+
+        calculate_net_worth(user, stock_array);
         
         switch(print_dashboard(user))
         {
             case 'a':
-                
+
                 adding_money(user);
                 break;
             
@@ -50,14 +53,18 @@ int main()
                 trade_stocks(user, stock_array, stock_names, day);
                 break;
                 
+            case 't':
+
+                search_records();
+
             case 'n':
-                
+
                 break;
 
             case 'e':
-                
+
                 cout<<"Thank you for using iStock"<<endl<<endl;
-                cout<<"See you soon !";
+                cout<<"See you again !!!";
                 exit(0);
                 break;
             

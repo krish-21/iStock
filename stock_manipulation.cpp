@@ -149,9 +149,11 @@ void read_shares_into_array(double stock_array[5])
 
 void print_stocks(double stock_array[5], string stock_names[5])
 {
+	cout<<"Current Market Value of Stocks : "<<endl<<endl;
+
 	for(int i=0; i<5; ++i)
 	{
-		cout<<stock_names[i]<<" : "<<stock_array[i]<<endl;
+		cout<<i+1<<". "<<stock_names[i]<<" : "<<stock_array[i]<<endl;
 	}
 	
 }

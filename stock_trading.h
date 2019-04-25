@@ -1,8 +1,8 @@
 #include "investor_class.h"
-#include <vector>
+#include <string>
 
-void trade_stocks(Investor &, double [], string [], int);
+void trade_stocks(Investor &, double [], std::string [], int);
 
-void buy_stock(Investor &, double [], string [], int);
+void buy_stock(Investor &, double [], std::string [], int);
 
-void sell_stock(Investor &, double [], string [], int);
+void sell_stock(Investor &, double [], std::string [], int);
