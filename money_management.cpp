@@ -66,7 +66,7 @@ void adding_money(Investor &user)
         }
     }
 
-    cout<<endl<<endl<<money_to_add<<"USD successfully added to Wallet !"<<endl<<endl;
+    cout<<endl<<endl<<money_to_add<<" USD successfully added to Wallet !"<<endl<<endl;
 }
 
 void calculate_net_worth(Investor &user, double stock_srray[5])

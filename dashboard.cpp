@@ -22,15 +22,16 @@ char print_dashboard(Investor &user, int day)
     user.print_my_stocks();
     cout<<endl<<endl; 
 
-    cout<<"Money in Wallet : "<<user.get_wallet_balance()<<endl<<endl;
+    cout<<"Money in Wallet        : "<<user.get_wallet_balance()<<endl<<endl;
     
     cout<<"Current Credit Balance : "<<user.get_credit_balance()<<endl<<endl<<endl;
 
-    cout<<"Press \"a\" to add money to wallet"<<endl<<endl;
-    cout<<"Press \"s\" to begin Stock Trading"<<endl<<endl;
-    cout<<"Press \"t\" to look up Transaction Records"<<endl<<endl;
-    cout<<"Press \"n\" to proceed to next day"<<endl<<endl;
-    cout<<"Press \"e\" to exit the program"<<endl<<endl;
+    cout<<"MENU :"<<endl<<endl;
+    cout<<"        \"a\" to add money to wallet"<<endl<<endl;
+    cout<<"        \"s\" to begin Stock Trading"<<endl<<endl;
+    cout<<"        \"t\" to look up Transaction Records"<<endl<<endl;
+    cout<<"        \"n\" to proceed to next day"<<endl<<endl;
+    cout<<"        \"e\" to exit the program"<<endl<<endl;
 
     cout<<"Action :  ";
     cin>>a;

@@ -80,11 +80,11 @@ double Investor::get_my_stock(int n)
 
 void Investor::print_my_stocks()
 {
-    cout<<"Alphabet  : "<<my_stocks[0]<<endl;
-    cout<<"Apple     : "<<my_stocks[1]<<endl;
-    cout<<"Microsoft : "<<my_stocks[2]<<endl;
-    cout<<"Facebook  : "<<my_stocks[3]<<endl;
-    cout<<"Amazon    : "<<my_stocks[4]<<endl;
+    cout<<"               Alphabet  : "<<my_stocks[0]<<endl;
+    cout<<"               Apple     : "<<my_stocks[1]<<endl;
+    cout<<"               Microsoft : "<<my_stocks[2]<<endl;
+    cout<<"               Facebook  : "<<my_stocks[3]<<endl;
+    cout<<"               Amazon    : "<<my_stocks[4]<<endl;
 }
 
 void Investor::add_money_to_wallet(double input)

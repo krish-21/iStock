@@ -82,9 +82,9 @@ int main()
 
         if(action != 'n')
         {
-            cout<<"Proceed to the nexr day (y/n) ?  ";
-            cout<<endl<<endl;
+            cout<<"Proceed to the next day (y/n) ?  ";
             cin>>ans;
+            cout<<endl<<endl;
 
             if(ans !='y')
                 goto label1;
@@ -95,7 +95,8 @@ int main()
 
         cout<<"Enter \"c\" to continue  ";
         cin>>pause;
-        cout<<"\b";
+        cout<<"\b\b";
+        cout<<endl<<endl;
     }
 
     return 0;
