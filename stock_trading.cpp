@@ -1,6 +1,7 @@
 #include <vector>
 #include <iostream>
 #include <fstream>
+
 #include "investor_class.h"
 #include "stock_trading.h"
 

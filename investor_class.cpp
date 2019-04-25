@@ -1,6 +1,7 @@
-#include "investor_class.h"
 #include <iostream>
 #include <string>
+
+#include "investor_class.h"
 
 using namespace std;
 

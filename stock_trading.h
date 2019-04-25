@@ -1,5 +1,6 @@
-#include "investor_class.h"
 #include <string>
+
+#include "investor_class.h"
 
 void trade_stocks(Investor &, double [], std::string [], int);
 

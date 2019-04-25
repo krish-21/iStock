@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+
 #include "investor_class.h"
 #include "set_up_screen.h"
 

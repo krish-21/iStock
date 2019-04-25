@@ -3,6 +3,7 @@
 #include <string>
 #include <fstream>
 #include <iomanip>
+
 #include "stock_manipulation.h"
 
 using namespace std;
