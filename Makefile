@@ -15,7 +15,7 @@ dashboard.o: dashboard.cpp dashboard.h investor_class.h
 money_management.o: money_management.cpp money_management.h investor_class.h
 	g++ -pedantic-errors -std=c++11 -c $<
 
-set_up_screen.o: set_up_screen.cpp set_up_screen.h
+set_up_screen.o: set_up_screen.cpp set_up_screen.h investor_class.h
 	g++ -pedantic-errors -std=c++11 -c $<
 
 stock_manipulation.o: stock_manipulation.cpp stock_manipulation.h 

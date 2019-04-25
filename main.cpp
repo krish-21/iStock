@@ -40,7 +40,7 @@ int main()
 
         calculate_net_worth(user, stock_array);
         
-        switch(print_dashboard(user))
+        switch(print_dashboard(user, day))
         {
             case 'a':
 

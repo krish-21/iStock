@@ -6,7 +6,7 @@
 
 using namespace std;
 
-char print_dashboard(Investor &user)
+char print_dashboard(Investor &user, int day)
 {
     char a;
     
@@ -14,7 +14,7 @@ char print_dashboard(Investor &user)
     cout<<"***********************************************************************";
     cout<<endl<<endl;
 
-    cout<<user.get_name()<<"'s Portfolio :"<<endl<<endl<<endl;
+    cout<<user.get_name()<<"'s Portfolio :                             Day "<<day<<endl<<endl<<endl;
 
     cout<<"Net Worth : "<<user.get_net_worth()<<endl<<endl;
 

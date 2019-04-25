@@ -1,3 +1,3 @@
 #include "investor_class.h"
 
-char print_dashboard(Investor &);
+char print_dashboard(Investor &, int);
