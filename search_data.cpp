@@ -64,6 +64,12 @@ void search_records()
 		filelength++;
 	}
 	
+	if(filelength==1)
+	{
+		cout<<"No records found in your file";
+		exit(1);
+	}
+	
 	finuser.clear();
 	finuser.seekg(0, ios::beg);
 	
