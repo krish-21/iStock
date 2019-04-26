@@ -21,7 +21,7 @@ set_up_screen.o: set_up_screen.cpp set_up_screen.h investor_class.h
 stock_manipulation.o: stock_manipulation.cpp stock_manipulation.h 
 	g++ -pedantic-errors -std=c++11 -c $<
 
-stock_trading.o: stock_trading.cpp stock_trading.h investor_class.h
+stock_trading.o: stock_trading.cpp stock_trading.h investor_class.h money_management.h
 	g++ -pedantic-errors -std=c++11 -c $<
 
 search_data.o: search_data.cpp search_data.h

@@ -15,16 +15,16 @@ char print_dashboard(Investor &user, int day)
 
     cout<<user.get_name()<<"'s Portfolio :                                         Day "<<day<<endl<<endl<<endl;
 
-    cout<<"Net Worth : "<<user.get_net_worth()<<endl<<endl;
+    cout<<"Net Worth : "<<"$ "<<user.get_net_worth()<<endl<<endl;
 
     cout<<"Stocks owned : "<<endl<<endl;
     
     user.print_my_stocks();
-    cout<<endl<<endl; 
+    cout<<endl<<endl;
 
-    cout<<"Wallet Balance   : "<<user.get_wallet_balance()<<endl<<endl;
+    cout<<"Wallet Balance   : "<<"$ "<<user.get_wallet_balance()<<endl<<endl;
     
-    cout<<"Credit Balance   : "<<user.get_credit_balance()<<endl<<endl<<endl;
+    cout<<"Credit Balance   : "<<"$ "<<user.get_credit_balance()<<endl<<endl<<endl;
 
     cout<<"MENU :"<<endl<<endl;
     cout<<"        \"a\" to add money to wallet"<<endl<<endl;

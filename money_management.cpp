@@ -8,8 +8,8 @@ void set_the_credit_limit(Investor &user)
     double limit;
     label1:
 
-    cout<<"                               (Recommended to be at least 1000)"<<endl;
-    cout<<"Please set your credit limit : ";
+    cout<<"                               (Recommended > $ 1000)"<<endl;
+    cout<<"Please set your credit limit : $ ";
     cin>>limit;
 
     if(limit <= 0)
@@ -39,9 +39,9 @@ void adding_money(Investor &user)
     while(ans=='y')
     {
         cout<<"How much money do you want to add to your wallet ?"<<endl<<endl;
-        cout<<"Please keep your credt limit in mind!        Credit Limit   =  "<<user.get_credit_limit()<<endl;
-        cout<<"                                             Credit Balance =  "<<user.get_credit_balance()<<endl;
-        cout<<"Amount to add :  ";
+        cout<<"Please keep your credt limit in mind!        Credit Limit   =  $ "<<user.get_credit_limit()<<endl;
+        cout<<"                                             Credit Balance =  $ "<<user.get_credit_balance()<<endl;
+        cout<<"Amount to add :  $ ";
 
         cin>>money_to_add;
 
@@ -75,12 +75,14 @@ void adding_money(Investor &user)
         }
     }
 
-    cout<<endl<<endl<<money_to_add<<" USD successfully added to Wallet !"<<endl<<endl;
+    cout<<endl<<endl<<"$ "<<money_to_add<<" successfully added to Wallet !"<<endl<<endl;
 }
 
 void calculate_net_worth(Investor &user, double stock_srray[5])
 {
     double net_worth=0;
+
+    user.set_net_worth(net_worth);
 
     for(int i=0; i<5; ++i)
     {

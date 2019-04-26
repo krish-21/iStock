@@ -19,7 +19,7 @@ int main()
 {
     
     double stock_array[5];
-    string stock_names[5]{"Google","Apple","Microsoft","Facebook","Amazon"};
+    string stock_names[5]{"Alphabet","Apple","Microsoft","Facebook","Amazon"};
     Investor user;
     int day=1;
     char action, ans = 'y', pause;
@@ -95,8 +95,7 @@ int main()
 
         cout<<"Enter \"c\" to continue  ";
         cin>>pause;
-        cout<<"\b\b";
-        cout<<endl<<endl;
+        cout<<endl<<endl<<endl<<endl;;
     }
 
     return 0;
