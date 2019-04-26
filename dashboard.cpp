@@ -33,7 +33,7 @@ char print_dashboard(Investor &user, int day)
     cout<<"        \"n\" to proceed to next day"<<endl<<endl;
     cout<<"        \"e\" to exit the program"<<endl<<endl;
 
-    cout<<"Action :  ";
+    cout<<"Action -  ";
     cin>>a;
 
     return a;
