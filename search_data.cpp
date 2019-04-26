@@ -41,9 +41,9 @@ void search_records()
 	int n;
 	cin>>n;
 	
-	while(n<0 || n>7)
+	while(n<1 || n>7)
 	{
-		cout<<"Invalid Input"<<endl;
+		cout<<endl<<"Invalid Input"<<endl;
 		cout<<"Enter Number Again:"<<endl;
 		cin>>n;
 	}
@@ -121,7 +121,7 @@ void search_records()
 					if(counter==0)
 					{
 						cout<<endl;
-						cout<<"Shares Bought(B)/Sold(S)   "<<"Amount Spent   "<<"Number of shares   "<<"Company Name   "<<"Share Price   "<<"Day   "<<endl;
+						cout<<"Shares Bought(B)/Sold(S)   "<<"Amount Spent   $ "<<"Number of shares   "<<"Company Name   "<<"Share Price   $ "<<"Day   "<<endl;
 					}
 					cout<<left<<setw(27)<<uservalues[i].c<<left<<setw(15)<<uservalues[i].amountspent<<left<<setw(19)<<uservalues[i].numberofshares
 					<<left<<setw(15)<<uservalues[i].companyname<<left<<setw(14)<<uservalues[i].shareprice<<left<<setw(6)<<uservalues[i].day<<endl;
@@ -154,7 +154,7 @@ void search_records()
 					if(counter==0)
 					{
 						cout<<endl;
-						cout<<"Shares Bought(B)/Sold(S)   "<<"Amount Spent   "<<"Number of shares   "<<"Company Name   "<<"Share Price   "<<"Day   "<<endl;
+						cout<<"Shares Bought(B)/Sold(S)   "<<"Amount Spent   $ "<<"Number of shares   "<<"Company Name   "<<"Share Price   $ "<<"Day   "<<endl;
 					}
 					cout<<left<<setw(27)<<uservalues[i].c<<left<<setw(15)<<uservalues[i].amountspent<<left<<setw(19)<<uservalues[i].numberofshares
 					<<left<<setw(15)<<uservalues[i].companyname<<left<<setw(14)<<uservalues[i].shareprice<<left<<setw(6)<<uservalues[i].day<<endl;
@@ -190,7 +190,7 @@ void search_records()
 				if(counter==0)
 				{
 					cout<<endl;
-					cout<<"Shares Bought(B)/Sold(S)   "<<"Amount Spent   "<<"Number of shares   "<<"Company Name   "<<"Share Price   "<<"Day   "<<endl;
+					cout<<"Shares Bought(B)/Sold(S)   "<<"Amount Spent   $ "<<"Number of shares   "<<"Company Name   "<<"Share Price   $"<<"Day   "<<endl;
 				}
 				cout<<left<<setw(27)<<uservalues[i].c<<left<<setw(15)<<uservalues[i].amountspent<<left<<setw(19)<<uservalues[i].numberofshares
 				<<left<<setw(15)<<uservalues[i].companyname<<left<<setw(14)<<uservalues[i].shareprice<<left<<setw(6)<<uservalues[i].day<<endl;
@@ -242,7 +242,7 @@ void search_records()
 				if(counter==0)
 				{
 					cout<<endl;
-					cout<<"Shares Bought(B)/Sold(S)   "<<"Amount Spent   "<<"Number of shares   "<<"Company Name   "<<"Share Price   "<<"Day   "<<endl;
+					cout<<"Shares Bought(B)/Sold(S)   "<<"Amount Spent   $ "<<"Number of shares   "<<"Company Name   "<<"Share Price   $ "<<"Day   "<<endl;
 				}
 				cout<<left<<setw(27)<<uservalues[i].c<<left<<setw(15)<<uservalues[i].amountspent<<left<<setw(19)<<uservalues[i].numberofshares
 				<<left<<setw(15)<<uservalues[i].companyname<<left<<setw(14)<<uservalues[i].shareprice<<left<<setw(6)<<uservalues[i].day<<endl;
@@ -266,7 +266,7 @@ void search_records()
 				if(counter==0)
 				{
 					cout<<endl;
-					cout<<"Shares Bought(B)/Sold(S)   "<<"Amount Spent   "<<"Number of shares   "<<"Company Name   "<<"Share Price   "<<"Day   "<<endl;
+					cout<<"Shares Bought(B)/Sold(S)   "<<"Amount Spent   $ "<<"Number of shares   "<<"Company Name   "<<"Share Price   $ "<<"Day   "<<endl;
 				}
 				cout<<left<<setw(27)<<uservalues[i].c<<left<<setw(15)<<uservalues[i].amountspent<<left<<setw(19)<<uservalues[i].numberofshares
 				<<left<<setw(15)<<uservalues[i].companyname<<left<<setw(14)<<uservalues[i].shareprice<<left<<setw(6)<<uservalues[i].day<<endl;
@@ -290,7 +290,7 @@ void search_records()
 				if(counter==0)
 				{
 					cout<<endl;
-					cout<<"Shares Bought(B)/Sold(S)   "<<"Amount Spent   "<<"Number of shares   "<<"Company Name   "<<"Share Price   "<<"Day   "<<endl;
+					cout<<"Shares Bought(B)/Sold(S)   "<<"Amount Spent   $ "<<"Number of shares   "<<"Company Name   "<<"Share Price   $ "<<"Day   "<<endl;
 				}
 				cout<<left<<setw(27)<<uservalues[i].c<<left<<setw(15)<<uservalues[i].amountspent<<left<<setw(19)<<uservalues[i].numberofshares
 				<<left<<setw(15)<<uservalues[i].companyname<<left<<setw(14)<<uservalues[i].shareprice<<left<<setw(6)<<uservalues[i].day<<endl;
@@ -325,7 +325,7 @@ void search_records()
 				if(counter==0)
 				{
 					cout<<endl;
-					cout<<"Shares Bought(B)/Sold(S)   "<<"Amount Spent   "<<"Number of shares   "<<"Company Name   "<<"Share Price   "<<"Day   "<<endl;
+					cout<<"Shares Bought(B)/Sold(S)   "<<"Amount Spent   $ "<<"Number of shares   "<<"Company Name   "<<"Share Price   $ "<<"Day   "<<endl;
 				}
 				cout<<left<<setw(27)<<uservalues[i].c<<left<<setw(15)<<uservalues[i].amountspent<<left<<setw(19)<<uservalues[i].numberofshares
 				<<left<<setw(15)<<uservalues[i].companyname<<left<<setw(14)<<uservalues[i].shareprice<<left<<setw(6)<<uservalues[i].day<<endl;

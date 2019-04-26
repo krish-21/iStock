@@ -10,7 +10,7 @@ using namespace std;
 
 void share_manipulation()
 {
-	string companyname[5]={"Google","Apple","Microsoft","Facebook","Amazon"};
+	string companyname[5]={"Alphabet","Apple","Microsoft","Facebook","Amazon"};
 	
 	double * shareprice=new double[5]();
 	
@@ -24,7 +24,8 @@ void share_manipulation()
 	if(finshares.fail())
 	{
 		cout<<endl<<"Failed to open shares.txt"<<endl;
-		exit(0);
+		cout<<"Exiting Current Mode"<<endl<<endl;
+		return;
 	}
 	
 	finshares.seekg(-36,ios_base::end);
@@ -112,7 +113,8 @@ void share_manipulation()
 	if(foutshares.fail())
 	{
 		cout<<"Unable to open shares.txt"<<endl;
-		exit(1);
+		cout<<"Exiting Current Mode"<<endl<<endl;
+		return;
 	}
 	foutshares<<endl;
 	for(int i=0;i<5;i++)
@@ -137,7 +139,8 @@ void read_shares_into_array(double stock_array[5])
 	if(fin.fail())
 	{
 		cout<<"Unable to open shares.txt"<<endl;
-		exit(1);
+		cout<<"Exiting Current Mode"<<endl<<endl;
+		return;
 	}
 
 	fin.seekg(-36,ios_base::end);
