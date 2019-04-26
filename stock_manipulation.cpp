@@ -150,4 +150,5 @@ void read_shares_into_array(double stock_array[5])
 		fin>>stock;
 		stock_array[i]=stock;
 	}
+	fin.close();
 }
