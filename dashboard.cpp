@@ -29,7 +29,8 @@ char print_dashboard(Investor &user, int day)
     cout<<"MENU :"<<endl<<endl;
     cout<<"        \"a\" to add money to wallet"<<endl<<endl;
     cout<<"        \"s\" to begin Stock Trading"<<endl<<endl;
-    cout<<"        \"t\" to look up Transaction Records"<<endl<<endl;
+    cout<<"        \"t\" to search for specific transanctions"<<endl<<endl;
+    cout<<"        \"o\" to sort and view all transactions"<<endl<<endl;
     cout<<"        \"n\" to proceed to next day"<<endl<<endl;
     cout<<"        \"e\" to exit the program"<<endl<<endl;
 

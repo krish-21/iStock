@@ -3,22 +3,10 @@
 #include <fstream>
 #include <iomanip>
 
-using namespace std;
-struct sortuser
-{
-	char c;
-	double amountspent;
-	int numberofshares;
-	string companyname;
-	double shareprice;
-	int day;
-};
+#include "sortuser.h"
+#include "sort.h"
 
-void sortamount(sortuser[],int);
-void sortnumberofshares(sortuser[],int);
-void sortshareprice(sortuser[],int);
-void print(sortuser [],int);
-void print_reverse(sortuser [],int);
+using namespace std;
 
 void sorting()
 {

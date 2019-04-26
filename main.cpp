@@ -12,6 +12,7 @@
 #include "stock_manipulation.h"
 #include "stock_trading.h"
 #include "search_data.h"
+#include "sort.h"
 
 using namespace std;
 
@@ -62,6 +63,10 @@ int main()
             case 't':
 
                 search_records();
+                break;
+            
+            case 'o':
+                sort();
                 break;
             
             case 'n':

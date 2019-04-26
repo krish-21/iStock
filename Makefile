@@ -1,9 +1,9 @@
-Objects  = main.o investor_class.o set_up_screen.o dashboard.o money_management.o  stock_manipulation.o stock_trading.o search_data.o
+Objects  = main.o investor_class.o set_up_screen.o dashboard.o money_management.o  stock_manipulation.o stock_trading.o search_data.o sort.o
 
 main: $(Objects)
 	g++ -pedantic-errors -std=c++11 $^ -o $@
 
-main.o: main.cpp investor_class.h set_up_screen.h dashboard.h money_management.h stock_manipulation.h stock_trading.h search_data.h
+main.o: main.cpp investor_class.h set_up_screen.h dashboard.h money_management.h stock_manipulation.h stock_trading.h search_data.h sort.h
 	g++ -pedantic-errors -std=c++11 -c $<
 
 investor_class.o: investor_class.cpp investor_class.h
@@ -25,6 +25,9 @@ stock_trading.o: stock_trading.cpp stock_trading.h investor_class.h money_manage
 	g++ -pedantic-errors -std=c++11 -c $<
 
 search_data.o: search_data.cpp search_data.h
+	g++ -pedantic-errors -std=c++11 -c $<
+
+sort.o: sort.cpp sort.h sortuser.h
 	g++ -pedantic-errors -std=c++11 -c $<
 
 clean:
