@@ -13,6 +13,7 @@
 #include "stock_trading.h"
 #include "search_data.h"
 #include "sort.h"
+#include "stock_history.h"
 
 using namespace std;
 
@@ -54,19 +55,26 @@ int main()
                 adding_money(user);
                 break;
             
-            case 's':
+            case 't':
             
                 cout<<endl<<endl;
                 trade_stocks(user, stock_array, stock_names, day);
                 break;
                 
-            case 't':
+            case 's':
 
                 search_records();
                 break;
             
-            case 'o':
-                sort();
+            case 'v':
+                
+                sorting();
+                break;
+            
+            case 'h':
+
+                cout<<"case h"<<endl;
+                print_history(stock_names);
                 break;
             
             case 'n':
@@ -100,7 +108,7 @@ int main()
 
         cout<<"Enter \"c\" to continue  ";
         cin>>pause;
-        cout<<endl<<endl<<endl<<endl;;
+        cout<<endl<<endl<<endl<<endl;
     }
 
     return 0;

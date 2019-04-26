@@ -1,5 +1,5 @@
-#ifndef Investor_h
-#define Investor_h
+#ifndef sortuser_h
+#define sortuser_h
 
 #include <string>
 
