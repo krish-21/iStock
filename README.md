@@ -67,7 +67,7 @@ Problems faced by Investors :
 
 ### Implementation of Program
 
-..............Write how iStock works...............
+
 
 
 ### Building and Running the Program
@@ -91,13 +91,6 @@ However, you are required to have [git](https://www.atlassian.com/git/tutorials/
 4.Start running the program.
 
 `./main`
-
-
-##Our Data Structure
-
-###Investor Class
-
-The class stores all the relevant user information.
 
 
 ##Limitations and Improvements

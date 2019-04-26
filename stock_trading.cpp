@@ -22,6 +22,13 @@ void buy_stock(Investor &user, double stock_array[5], string stock_names[5], int
     ofstream fout;
     fout.open("records.txt", ios::app);
 
+    if(fout.fail())
+	{
+		cout<<"Unable to open records.txt"<<endl<<endl;
+        cout<<"Exiting the program";
+		exit(1);
+	}
+
     label1:
 
     cout<<endl<<endl;
@@ -127,10 +134,15 @@ void sell_stock(Investor &user, double stock_array[5], string stock_names[5], in
     int n;
     double sale_amount, no_of_stocks;
 
-    string temp_filename = "records";
-    string filename = temp_filename + ".txt";
     ofstream fout;
-    fout.open(filename, ios::app);
+    fout.open("records.txt", ios::app);
+
+    if(fout.fail())
+	{
+		cout<<"Unable to open records.txt"<<endl<<endl;
+        cout<<"Exiting the program";
+		exit(1);
+	}
 
     label1:
     

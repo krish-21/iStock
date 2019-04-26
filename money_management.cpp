@@ -6,10 +6,19 @@
 void set_the_credit_limit(Investor &user)
 {
     double limit;
+    label1:
 
     cout<<"                               (Recommended to be at least 1000)"<<endl;
     cout<<"Please set your credit limit : ";
     cin>>limit;
+
+    if(limit <= 0)
+    {
+        cout<<endl<<endl;
+        cout<<"Please enter a positive number ";
+        cout<<endl<<endl;
+    }
+    
     cout<<endl<<endl;
         
     user.set_credit_limit(limit);

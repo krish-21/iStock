@@ -22,9 +22,9 @@ char print_dashboard(Investor &user, int day)
     user.print_my_stocks();
     cout<<endl<<endl; 
 
-    cout<<"Money in Wallet        : "<<user.get_wallet_balance()<<endl<<endl;
+    cout<<"Wallet Balance   : "<<user.get_wallet_balance()<<endl<<endl;
     
-    cout<<"Current Credit Balance : "<<user.get_credit_balance()<<endl<<endl<<endl;
+    cout<<"Credit Balance   : "<<user.get_credit_balance()<<endl<<endl<<endl;
 
     cout<<"MENU :"<<endl<<endl;
     cout<<"        \"a\" to add money to wallet"<<endl<<endl;
