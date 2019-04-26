@@ -46,6 +46,7 @@ void sorting()
 	
 	int filelength=0;
 	string line;
+	
 	while(getline(finuser,line))
 	{
 		filelength++;
@@ -102,9 +103,11 @@ void sorting()
 	else if(n==7)
 	{
 		int i,j,min;
+		
 		for(i=0;i<(filelength-1);i++)
 		{
 			int min=i;
+			
 			for(j=i+1;j<filelength;j++)
 			{
 				if(uservalues[j].companyname<uservalues[min].companyname)
@@ -112,6 +115,7 @@ void sorting()
 					min=j;
 				}
 			}
+			
 			char swap1=uservalues[min].c;
 			uservalues[min].c=uservalues[i].c;
 			uservalues[i].c=swap1;
@@ -133,6 +137,7 @@ void sorting()
 		}
 		print(uservalues,filelength);
 	}
+	delete [] uservalues;s
 }
 
 void sortamount(sortuser uservalues[],int length)
@@ -235,7 +240,6 @@ void sortshareprice(sortuser uservalues[],int length)
 		uservalues[min].day=uservalues[i].day;
 		uservalues[i].day=swap6;
 	}
-	delete [] uservalues;
 }
 
 void print(sortuser uservalues[],int filelength)
