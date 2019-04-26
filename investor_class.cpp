@@ -107,3 +107,12 @@ void Investor::sell_my_stock(int n, double no_of_stocks, double sale_amount)
     my_stocks[n-1] -= no_of_stocks;
     wallet_balance += sale_amount;
 }
+
+void Investor::set_no_of_shares(double input1, double input2, double input3, double input4, double input5)
+{
+    my_stocks[0]=input1;
+    my_stocks[1]=input2;
+    my_stocks[2]=input3;
+    my_stocks[3]=input4;
+    my_stocks[4]=input5;
+}

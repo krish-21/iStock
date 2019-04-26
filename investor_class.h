@@ -30,6 +30,8 @@ class Investor
     void buy_my_stock(int, double, double);
     void sell_my_stock(int, double, double);
 
+    void set_no_of_shares(double, double, double, double, double);
+
 
     private:
 

@@ -7,6 +7,7 @@
 
 #include "investor_class.h"
 #include "set_up_screen.h"
+#include "start.h"
 #include "dashboard.h"
 #include "money_management.h"
 #include "stock_manipulation.h"
@@ -22,13 +23,14 @@ int main()
     
     double stock_array[5];
     string stock_names[5]{"Alphabet","Apple","Microsoft","Facebook","Amazon"};
+    string uid;
     Investor user;
     int day=1;
     char action, ans = 'y', pause;
 
     set_up_function(user);
-    
-    set_the_credit_limit(user);
+
+    uid = newuser(user);
 
     while(true)
     {

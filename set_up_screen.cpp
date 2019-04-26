@@ -23,12 +23,6 @@ void set_up_function(Investor &user)
     cout<<"*****************************************************************************************************************************************************"<<endl;
     cout<<"*****************************************************************************************************************************************************"<<endl<<endl<<endl;
 
-    cout<<"Please enter your name : ";
-
-    cin>>name;
-
-    user.set_name(name);
-    
     cout<<endl<<"IMPORTANT - To stop, over-spending, you will have to set a credit limit for yourself."<<endl<<endl;
 
     cout<<"            The credit limit will be fixed during the entire duration of your virtual stock trading experience."<<endl<<endl<<endl;

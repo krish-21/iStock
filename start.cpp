@@ -3,8 +3,11 @@
 #include <string>
 #include <fstream>
 
+#include "investor_class.h"
+#include "start.h"
+
 using namespace std;
-string newuser(Investor);
+string newuser(Investor &);
 
 struct users
 {
@@ -64,11 +67,12 @@ string newuser(Investor &user)
 		<<" "<<newuser.google<<" "<<newuser.apple<<" "<<newuser.microsoft<<" "<<newuser.facebook<<" "<<newuser.amazon;
 		foutusers.close();
 		cout<<"Successfully created your account"<<endl;
-		set_name(newuser.name);
-		set_net_worth();
-    	set_wallet_balance(newuser.wallet_balance);
-    	set_net_worth(newuser.networth);
-   		set_credit_limit(newuser.creditlimit);
+		user.set_name(newuser.name);
+		user.set_net_worth(newuser.networth);
+    	user.set_wallet_balance(newuser.wallet_balance);
+    	user.set_net_worth(newuser.networth);
+   		user.set_credit_limit(newuser.creditlimit);
+		user.set_no_of_shares(newuser.google,newuser.apple, newuser.microsoft, newuser.facebook, newuser.amazon);
 		
 		return newuser.userid;
 	}
@@ -95,7 +99,7 @@ string newuser(Investor &user)
 		finusers.seekg(0, ios::beg);
 		int k=0;
 		while(finusers>>userdetails[k].name>>userdetails[k].userid>>userdetails[k].password>>userdetails[k].creditlimit>>userdetails[k].wallet_balance>>
-		newuser[k].networth>>userdetails[k].google>>userdetails[k].apple>>userdetails[k].microsoft>>userdetails[k].facebook>>userdetails[k].amazon)
+		userdetails[k].networth>>userdetails[k].google>>userdetails[k].apple>>userdetails[k].microsoft>>userdetails[k].facebook>>userdetails[k].amazon)
 		{
 			k++;
 		}
@@ -120,17 +124,18 @@ string newuser(Investor &user)
 		}
 		cout<<"Enter Password"<<endl;
 		cin>>password;
-		while(userdetails[pos]!=password)
+		while(userdetails[pos].password!=password)
 		{
 			cout<<"Incorrect Password"<<endl;
 			cout<<"Enter Password Again"<<endl;
 			cin>>password;
 		}
 		cout<<"Login Successful"<<endl;
-		set_name(userdetails[pos].name);
-    	set_net_worth(userdetails[pos].networth);
-    	set_wallet_balance(userdetails[pos].wallet_balance);
-    	set_credit_limit(userdetails[pos].creditlimit);
+		user.set_name(userdetails[pos].name);
+    	user.set_net_worth(userdetails[pos].networth);
+    	user.set_wallet_balance(userdetails[pos].wallet_balance);
+    	user.set_credit_limit(userdetails[pos].creditlimit);
+		user.set_no_of_shares(userdetails[pos].google,userdetails[pos].apple, userdetails[pos].microsoft, userdetails[pos].facebook, userdetails[pos].amazon);
 	}
 	else if(n==3)
 	{
