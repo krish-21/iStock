@@ -140,6 +140,8 @@ The program comes to an end.
 ### Implementation of iStock
 
 
+**DISCLAIMAER : *For the best experience of iStock, please set the Terminal to fullscreen mode*** 
+
 The stock trading starts on Day 1. 
 
 The User should first set your credit limit in the beginning. 

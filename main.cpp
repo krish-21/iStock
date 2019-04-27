@@ -83,8 +83,9 @@ int main()
 
             case 'e':
 
+                cout<<endl<<endl<<endl;
                 cout<<"Thank you for using iStock"<<endl<<endl;
-                cout<<"See you again !!!";
+                cout<<"See you again !!!"<<endl<<endl<<endl;
                 exit(0);
                 break;
             
@@ -103,11 +104,12 @@ int main()
                 goto label1;
         }
         
-        cout<<"#############################"<<"Proceeding to the next day"<<"#############################"<<endl<<endl<<endl;
-        ++day;
+        cout<<"####################################################################################"<<endl;
+        cout<<"#############################Proceeding to the next day#############################"<<endl;
+        cout<<"####################################################################################"<<endl;
 
-        cout<<"Enter \"c\" to continue  ";
-        cin>>pause;
+        ++day;
+        
         cout<<endl<<endl<<endl<<endl;
     }
 

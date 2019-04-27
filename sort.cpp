@@ -42,7 +42,8 @@ void sorting()
 	if(finuser.fail())
 	{
 		cout<<"Unable to open "<<filename<<endl;
-		exit(1);
+		cout<<"Exiting the Current Mode"<<endl<<endl<<endl<<endl;
+		return;
 	}
 	
 	int filelength=0;
@@ -53,10 +54,11 @@ void sorting()
 		filelength++;
 	}
 	
-	if(filelength==1)
+	if(filelength==0)
 	{
-		cout<<"No records found in your file";
-		exit(1);
+		cout<<"No records found in your file"<<endl<<endl;
+		cout<<"Exiting the Current Mode"<<endl<<endl<<endl<<endl;
+		return;
 	}
 	
 	finuser.clear();

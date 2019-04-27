@@ -26,7 +26,7 @@ void buy_stock(Investor &user, double stock_array[5], string stock_names[5], int
     if(fout.fail())
 	{
 		cout<<endl<<"Unable to open records.txt"<<endl<<endl;
-        cout<<"Exiting the current mode";
+        cout<<"Exiting the Current Mode"<<endl<<endl;
         return;
 	}
 
@@ -48,7 +48,7 @@ void buy_stock(Investor &user, double stock_array[5], string stock_names[5], int
     user.print_my_stocks();
     cout<<endl<<endl;
 
-    cout<<"                                                      Waller Balance = $ "<<user.get_wallet_balance()<<endl<<endl;
+    cout<<"                                                      Wallet Balance = $ "<<user.get_wallet_balance()<<endl<<endl;
     cout<<"Which stock do you want to buy ?"<<endl<<endl;
     cout<<"Enter the S.No of the corresponding Stock (1-5) :  ";
     cin>>n;
@@ -78,7 +78,7 @@ void buy_stock(Investor &user, double stock_array[5], string stock_names[5], int
     if(no_of_stocks < 0)
     {
         cout<<endl<<"Cannot buy negative number of stocks !"<<endl<<endl;
-        cout<<"Do you want tot try again (y/n) ?  ";
+        cout<<"Do you want to try again (y/n) ?  ";
         cin>>ans;
 
         if(ans == 'y')
@@ -94,7 +94,7 @@ void buy_stock(Investor &user, double stock_array[5], string stock_names[5], int
     else if(no_of_stocks == 0)
     {
         cout<<endl<<"Cannot buy zero stocks !"<<endl<<endl;
-        cout<<"Do you want tot try again (y/n) ?  ";
+        cout<<"Do you want to try again (y/n) ?  ";
         cin>>ans;
 
         if(ans == 'y')
@@ -112,7 +112,7 @@ void buy_stock(Investor &user, double stock_array[5], string stock_names[5], int
     if(purchase_amount > user.get_wallet_balance())
     {
         cout<<endl<<"Insufficient Wallet Balance !"<<endl<<endl;
-        cout<<"Do you want tot try again (y/n) ?  ";
+        cout<<"Do you want to try again (y/n) ?  ";
         cin>>ans;
 
         if(ans == 'y')
@@ -125,8 +125,8 @@ void buy_stock(Investor &user, double stock_array[5], string stock_names[5], int
         }
     }
 
-    cout<<endl<<"No of stocks bought = "<<no_of_stocks<<endl;
-    cout<<"Amount Spent =  $ "<<purchase_amount<<endl<<endl;
+    cout<<endl<<"No of stocks bought   "<<"=  "<<no_of_stocks<<endl;
+    cout<<"Amount Spent          "<<"=  $ "<<purchase_amount<<endl<<endl;
 
     user.buy_my_stock(n, no_of_stocks, purchase_amount);
         
@@ -178,7 +178,7 @@ void sell_stock(Investor &user, double stock_array[5], string stock_names[5], in
     user.print_my_stocks();
     cout<<endl<<endl;
 
-    cout<<"                                                      Waller Balance = $ "<<user.get_wallet_balance()<<endl<<endl;
+    cout<<"                                                      Wallet Balance = $ "<<user.get_wallet_balance()<<endl<<endl;
     cout<<"Which stock do you want to sell ? :   ";
     cin>>n;
     cout<<endl;
@@ -188,7 +188,7 @@ void sell_stock(Investor &user, double stock_array[5], string stock_names[5], in
     if(no_of_stocks < 0)
     {
         cout<<endl<<"Cannot sell negative number of stocks !"<<endl;
-        cout<<"Do you want tot try again (y/n) ?"<<endl;
+        cout<<"Do you want to try again (y/n) ?"<<endl;
         cin>>ans;
 
         if(ans == 'y')
@@ -204,7 +204,7 @@ void sell_stock(Investor &user, double stock_array[5], string stock_names[5], in
     else if(no_of_stocks == 0)
     {
         cout<<endl<<"Cannot sell zero stocks !"<<endl;
-        cout<<"Do you want tot try again (y/n) ?"<<endl;
+        cout<<"Do you want to try again (y/n) ?"<<endl;
         cin>>ans;
 
         if(ans == 'y')
@@ -297,5 +297,8 @@ void trade_stocks(Investor &user, double stock_array[5], string stock_names[5], 
         cin>>ans;
         cout<<endl<<endl;
     }
+
+    cout<<endl<<endl;
+    cout<<"Exiting Current Mode"<<endl<<endl;
     
 }

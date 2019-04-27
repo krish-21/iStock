@@ -1,4 +1,5 @@
 #include <iostream>
+#include <iomanip>
 #include <string>
 
 #include "investor_class.h"
@@ -10,7 +11,8 @@ char print_dashboard(Investor &user, int day)
 {
     char a;
     
-    cout<<"*****************************************---DASHBOARD---*****************************************";
+    cout<<fixed<<showpoint<<setprecision(2);
+    cout<<"******************************************---DASHBOARD---******************************************";
     cout<<endl<<endl;
 
     cout<<user.get_name()<<"'s Portfolio :                                         Day "<<day<<endl<<endl<<endl;
