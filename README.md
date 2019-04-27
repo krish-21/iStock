@@ -195,19 +195,19 @@ Using iStock is a simple task for anyone with a Unix-based terminal. Follow the 
 However, you are required to have [git](https://www.atlassian.com/git/tutorials/install-git), [g++ compiler](https://www.cs.odu.edu/~zeil/cs250PreTest/latest/Public/installingACompiler/), and [make](https://www.gnu.org/software/make/) installed.
 
 
-1. Clone this GitHub repo.
+1. Clone this GitHub repository :
 
     `git clone https://github.com/krish-21/iStock.git`
 
-2. Go into the project root directory.
+2. Go into iStock's root directory :
 
     `cd iStock`
 
-3. Build the main program using make. *Our makefile defaults to compiling main.cpp.*
+3. Build the main program using make : *Our makefile defaults to compiling main.cpp.*
 
     `make`
 
-4. Start running iStock.
+4. Run iStock :
 
     `./main`
 
