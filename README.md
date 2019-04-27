@@ -57,6 +57,7 @@ Problems faced by Investors :
 2. They do not have an option to set a credit limit for themselves to avoid overspending.
 3. No efficient method to look up specific transactions.
 4. No efficient way to look at the transaction history in a sorted manner.
+5. NO efficient way to look at the stock price history in an integrated environment.
 
 
 ## Features of iStock
