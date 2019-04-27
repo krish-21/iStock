@@ -226,9 +226,9 @@ void search_records()
 		//checking company name without capital or small error
 		//if error in company name is there reenter the value
 		
-		while(cname!="Google" && cname!="Apple" && cname!="Microsoft" && cname!="Facebook" && cname!="Amazon" 
-		&& cname!="google" && cname!="apple" && cname!="microsoft" && cname!="facebook" && cname!="amazon" && 
-		cname!="GOOGLE" && cname!="APPLE" && cname!="MICROSOFT" && cname!="FACEBOOK" && cname!="AMAZON")
+		while(cname!="Alphabet" && cname!="Apple" && cname!="Microsoft" && cname!="Facebook" && cname!="Amazon" 
+		&& cname!="alphabet" && cname!="apple" && cname!="microsoft" && cname!="facebook" && cname!="amazon" && 
+		cname!="ALPHABET" && cname!="APPLE" && cname!="MICROSOFT" && cname!="FACEBOOK" && cname!="AMAZON")
 		{
 			cout<<"Invalid Company Name"<<endl;
 			cout<<"Enter Company Name again:"<<endl;
