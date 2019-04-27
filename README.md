@@ -2,7 +2,7 @@
 
 #### Group members
 - Krishna Nanduri (3035551278)
-- Harsh Agarwal (3035553549)
+- Harsh Agarwal   (3035553549)
 
 
 ## Introduction
@@ -10,7 +10,8 @@
 
 ### Problem Statement
 
-Finance is the most important economic sector in Hong Kong. Understanding finance in quintessential to all Hong Kongers.
+Finance is the most important economic sector in Hong Kong. Understanding finance in quintessential to for evryone in  Hong Kong.
+
 
 Finance is broadly divided into 3 primary areas :
 
@@ -19,12 +20,14 @@ Finance is broadly divided into 3 primary areas :
 3. Financial Markets & Institutions
 
 
+
 There are 4 different types of Investments each with distinct characteristics, risks and benefits :
 
 1. Stocks
 2. Property
 3. Cash
 4. Fixed Interest
+
 
 
 Stocks and Stock Markets : (Wikipedia)
@@ -39,9 +42,7 @@ Investors around the world study the stock market for several years, and still, 
 Anton Chekhov, one of the greatest writers of short fiction in history, has rightly said **"Knowlege is of no value unless you put it into practice"**
 
 
-This lack of mastery even after several years of practice could be quite a scary situation for investors who are new to the market.
-
-How do investors practice stock trading without actually putting in some money?
+This lack of mastery even after several years of practice could be quite a scary situation for investors who are new to the market.How do investors practice stock trading without actually putting in some money?
 
 This problem is solved by our program **iStock**, a stock market simulator written in C++.
 
@@ -49,6 +50,7 @@ This problem is solved by our program **iStock**, a stock market simulator writt
 
 
 ### Problem Setting
+
 
 Problems faced by Investors :
 
@@ -58,7 +60,7 @@ Problems faced by Investors :
 4. No efficient way to look at the transaction history in a sorted manner.
 
 
-##Features of iStock
+## Features of iStock
 
 ...........Have to write features..............
 
@@ -66,7 +68,9 @@ Problems faced by Investors :
 ## Using iStock
 
 
+
 ### Implementation of iStock
+
 
 The stock trading starts on Day 1. 
 
@@ -114,6 +118,7 @@ iStock keeps running until the user chooses the fifth option to exit.
 
 ### Building and Running iStock
 
+
 Using iStock is a simple task for anyone with a Unix-based terminal. Follow the trailing instructions, and execute the commands in order. 
 However, you are required to have [git](https://www.atlassian.com/git/tutorials/install-git), [g++ compiler](https://www.cs.odu.edu/~zeil/cs250PreTest/latest/Public/installingACompiler/), and [make](https://www.gnu.org/software/make/) installed.
 
@@ -135,7 +140,8 @@ However, you are required to have [git](https://www.atlassian.com/git/tutorials/
 `./main`
 
 
-##Limitations and Improvements
+## Limitations and Improvements
+
 
 One of the limitations of iStock is that we assume that the user gives the right type of input. Eg. When iStock asks for an integer, it is assumed that the input provided is an integer. 
 If a character is given as the input, the program fails to check it and unintended results are observed.
