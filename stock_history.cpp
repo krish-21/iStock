@@ -36,7 +36,7 @@ void print_history(string stock_names[5])
     //while loop till end of file has been reached
     while(!fin.eof())
     {
-        cout<<"in while loop"<<endl<<endl;
+//        cout<<"in while loop"<<endl<<endl;
                     
         fin>>temp_stock_value;
         alphabet_vector.push_back(temp_stock_value);
@@ -92,8 +92,8 @@ void print_history(string stock_names[5])
         }
     }
 
-    cout<<"How many days back do you want the Stock History to start from ? :                     No of days passed = "<<max_days<<endl<<endl;
-    cout<<"Days back - ";
+    cout<<"How many old values of the Stock History do you want to see ? :                     We have these number of old stock values = "<<max_days<<endl<<endl;
+    cout<<"Number of old values - ";
     cin>>days;
 
     //days back cannot be ahead
