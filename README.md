@@ -182,9 +182,9 @@ After the User finished the day's work, the User can proceed to the next day.
 
 Proceeding to the next day means that the stock of each company changes at the end of each day, thus changing the User's net worth too.
 
-iStock again prints the dashboard for the User to do the necessary.
+Once agian, iStock prints the dashboard for the User to do the necessary.
 
-iStock keeps running until the User chooses the fifth option to exit.
+Thus, iStock keeps running until the User chooses the fifth option - exit.
 
 
 
