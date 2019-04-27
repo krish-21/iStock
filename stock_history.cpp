@@ -92,7 +92,7 @@ void print_history(string stock_names[5])
         }
     }
 
-    cout<<"How many days back do you want the Stock History to start from ? :                     No of days passed = "<<max_days<<endl<<endl;
+    cout<<"How many days back do you want the Stock History to start from ? :                     We have these number of old stock values = "<<max_days<<endl<<endl;
     cout<<"Days back - ";
     cin>>days;
 
