@@ -109,9 +109,13 @@ int main()
 
                 //exits iStock
                 cout<<endl<<endl<<endl;
+                
+                cout<<"All your data is deleted"<<endl;
+                
+                cout<<endl<<endl;
+                
                 cout<<"Thank you for using iStock"<<endl<<endl;
                 cout<<"See you again !!!"<<endl<<endl<<endl;
-                
                 
                 remove("records.txt");
                 
