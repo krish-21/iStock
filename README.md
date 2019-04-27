@@ -135,6 +135,8 @@ The User chooses to exit iStock.
 The program comes to an end.
 When the program ends, all the data of the user is deleted.
 
+If you want to save your data, you can copy the text file records.txt before exiting the program!
+
 
 ## Using iStock
 
