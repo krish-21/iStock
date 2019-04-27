@@ -203,7 +203,7 @@ However, you are required to have [git](https://www.atlassian.com/git/tutorials/
 
     `cd iStock`
 
-3. Build the main program using make : *Our Makefile compiles main.cpp by default.*
+3. Build the main program using make : *Our Makefile compiles main.cpp by default*
 
     `make`
 
