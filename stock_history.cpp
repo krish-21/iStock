@@ -10,10 +10,11 @@ using namespace std;
 
 void print_history(string stock_names[5])
 {
-    cout<<"in stock history"<<endl<<endl;
     int sno, i, days, max_days=0;
     char ans;
     double temp_stock_value;
+
+    //vector for each company's stock history
     vector <double> alphabet_vector;
     vector <double> apple_vector;
     vector <double> microsoft_vector;
@@ -23,6 +24,7 @@ void print_history(string stock_names[5])
     ifstream fin;
     fin.open("shares.txt");
 
+    //if shares.txt cannot be opened, return to dashboard
     if(fin.fail())
     {
         cout<<"Unable to open shares.txt"<<endl;
@@ -30,6 +32,8 @@ void print_history(string stock_names[5])
         return;
     }
 
+    //read the company stocks from shares.txt and store them in the vector
+    //while loop till end of file has been reached
     while(!fin.eof())
     {
         cout<<"in while loop"<<endl<<endl;
@@ -68,6 +72,7 @@ void print_history(string stock_names[5])
     cin>>sno;
     cout<<endl<<endl;
 
+    //to check if input is a valid number
     if(sno<1 || sno>5)
     {
         cout<<"Invalid input !"<<endl;
@@ -87,10 +92,11 @@ void print_history(string stock_names[5])
         }
     }
 
-    cout<<"How many days do you want the Stock History to start from ? :                     No of days passed = "<<max_days<<endl<<endl;
+    cout<<"How many days back do you want the Stock History to start from ? :                     No of days passed = "<<max_days<<endl<<endl;
     cout<<"Days back - ";
     cin>>days;
 
+    //days back cannot be ahead
     if(days<=0)
     {
         cout<<"Invalid input !"<<endl;
@@ -110,6 +116,7 @@ void print_history(string stock_names[5])
         }
     }
 
+    //days back cannot be greater than the days passed
     if(days>max_days)
     {
         cout<<"Invalid Input ! "<<endl;
@@ -130,6 +137,7 @@ void print_history(string stock_names[5])
         }
     }
 
+    //switch case for each of the different companies
     switch(sno)
     {
         case 1:
@@ -173,11 +181,13 @@ void print_history(string stock_names[5])
     
     cin>>ans;
 
+    //check if user wants to see the history again
     if(ans=='y')
         {
             goto label1;
         }
         
+        //if no, return to the dashboard
         else
         {
             cout<<endl<<endl;

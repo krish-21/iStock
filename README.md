@@ -1,6 +1,7 @@
 # 2018/19 Semester 2 ENGG1340 Course Project (Group 21)
 
 #### Group members
+
 - Krishna Nanduri (3035551278)
 - Harsh Agarwal   (3035553549)
 
@@ -195,19 +196,19 @@ However, you are required to have [git](https://www.atlassian.com/git/tutorials/
 
 1. Clone this GitHub repo.
 
-`git clone https://github.com/krish-21/iStock.git`
+    `git clone https://github.com/krish-21/iStock.git`
 
 2. Go into the project root directory.
 
-`cd iStock`
+    `cd iStock`
 
 3. Build the main program using make. *Our makefile defaults to compiling main.cpp.*
 
-`make`
+    `make`
 
 4. Start running iStock.
 
-`./main`
+    `./main`
 
 
 ## Limitations and Improvements

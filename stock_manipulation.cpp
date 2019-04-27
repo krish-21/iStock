@@ -136,6 +136,7 @@ void read_shares_into_array(double stock_array[5])
 	
 	fin.open("shares.txt");
 
+	//if shares.txt cannot be opened, return to dashboard
 	if(fin.fail())
 	{
 		cout<<"Unable to open shares.txt"<<endl;
@@ -143,12 +144,15 @@ void read_shares_into_array(double stock_array[5])
 		return;
 	}
 
+	//go to the beginning of the last line of shares.txt to get the latest values
 	fin.seekg(-36,ios_base::end);
 
+	//read the lates values into stock_array
 	for(int i=0; i<5; ++i)
 	{
 		fin>>stock;
 		stock_array[i]=stock;
 	}
+	
 	fin.close();
 }

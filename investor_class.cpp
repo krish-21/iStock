@@ -5,6 +5,7 @@
 
 using namespace std;
 
+//defualt constructor of the class
 Investor::Investor(void)
 {
     net_worth=0;
@@ -18,6 +19,7 @@ Investor::Investor(void)
     my_stocks[4]=0;
 }
 
+//setter functions
 void Investor::set_name(string input)
 {
     name = input;
@@ -43,6 +45,7 @@ void Investor::reset_credit_balance()
     temp_transferred_money=0;
 }
 
+//getter functions
 string Investor::get_name()
 {
     return name;
@@ -75,9 +78,10 @@ double Investor::get_temp_transferred_money()
 
 double Investor::get_my_stock(int n)
 {
-    return my_stocks[n];
+    return my_stocks[n-1];
 }
 
+//printing stockownership
 void Investor::print_my_stocks()
 {
     cout<<"               Alphabet  : "<<my_stocks[0]<<endl;
@@ -87,6 +91,7 @@ void Investor::print_my_stocks()
     cout<<"               Amazon    : "<<my_stocks[4]<<endl;
 }
 
+//adds money to the wallet
 void Investor::add_money_to_wallet(double input)
 {
     temp_transferred_money += input;
@@ -96,12 +101,14 @@ void Investor::add_money_to_wallet(double input)
     wallet_balance += input;
 }
 
+//buy stocks & update wallet balance
 void Investor::buy_my_stock(int n, double no_of_stocks, double amount_spent)
 {
     my_stocks[n-1] += no_of_stocks;
     wallet_balance -= amount_spent;
 }
 
+//sell stocks & update wallet balance
 void Investor::sell_my_stock(int n, double no_of_stocks, double sale_amount)
 {
     my_stocks[n-1] -= no_of_stocks;
