@@ -36,7 +36,7 @@ void print_history(string stock_names[5])
     //while loop till end of file has been reached
     while(!fin.eof())
     {
-        cout<<"in while loop"<<endl<<endl;
+//        cout<<"in while loop"<<endl<<endl;
                     
         fin>>temp_stock_value;
         alphabet_vector.push_back(temp_stock_value);
