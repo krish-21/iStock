@@ -7,8 +7,8 @@
 
 ## Introduction
 
-
 ### Problem Statement
+
 
 Finance is the most important economic sector in Hong Kong. Understanding finance in quintessential to for evryone in  Hong Kong.
 
@@ -20,14 +20,12 @@ Finance is broadly divided into 3 primary areas :
 3. Financial Markets & Institutions
 
 
-
 There are 4 different types of Investments each with distinct characteristics, risks and benefits :
 
 1. Stocks
 2. Property
 3. Cash
 4. Fixed Interest
-
 
 
 Stocks and Stock Markets : (Wikipedia)
@@ -42,7 +40,7 @@ Investors around the world study the stock market for several years, and still, 
 Anton Chekhov, one of the greatest writers of short fiction in history, has rightly said **"Knowlege is of no value unless you put it into practice"**
 
 
-This lack of mastery even after several years of practice could be quite a scary situation for investors who are new to the market.How do investors practice stock trading without actually putting in some money?
+This lack of mastery even after several years of practice could be quite a scary situation for investors who are new to the market. How do investors practice stock trading without actually putting in some money?
 
 This problem is solved by our program **iStock**, a stock market simulator written in C++.
 
@@ -62,7 +60,77 @@ Problems faced by Investors :
 
 ## Features of iStock
 
-...........Have to write features..............
+### Setting the Credit Limit 
+
+- The credit limit is for the financial security of the user and cannot be changed once set. The credit balance refreshes once every five days.
+
+- Thus the user will have to wait for the cycle to run its course if the credit limit reached.
+
+
+### Adding Money to the Wallet 
+
+- iStock has an in-app wallet through which all transactions must be made.
+
+- The user can add money at any point in the program, but iStock will always check the credit limit
+
+- The added money will get updated to the Wallet Balance.
+
+
+### Stock Trading Mode
+
+*Buying Mode :*
+
+- iStock will first show the current market value of the stocks.
+
+- The current portfolio of the user will also be printed.
+
+- iStock will also show the user the Wallet Balance so that the user can make an informed purchase of stocks. Then, the user can buy stocks of the five tech giants.
+
+*Selling Mode :*
+
+- iStock will first show the current market value of the stocks.
+
+- The current portfolio of the user will also be printed.
+
+- iStock will also show the user the Wallet Balance so that the user can make an informed sale of stocks. Then, the user can sell the stocks the user owns.
+
+### Searching Mode 
+
+The user can search transactions from the stored file, records.txt, and choose from six different methods of searching :
+
+1. Amount Spent
+2. No. of shares
+3. Company Name
+4. Shares Bought
+5. Shares Sold
+6. Day of transaction
+
+### Sorting Mode
+
+The user can sort and print all the transactions made in a specific order and can do so in the following ways :
+
+1.  Amount Spent - Ascending order 
+2.  Amount Spent - Descending order 
+3. Number of shares - Ascending order
+4. Number of shares - Descending order
+5. Share Price - Ascending order
+6. Share Price - Descending order
+7. Company Name in alphabetical order
+
+### Stock History
+
+- The user can choose a specific company and look at the history of the stocks of the company.
+
+- The user can choose how many days back to look up the stock history.
+
+### Proceed to next day
+
+The user chooses not to take any action and iStock proceeds to the next day. Consequently, the stock price of each company changes too.
+
+### Exit the program
+
+The user chooses to exit iStock. 
+The program comes to an end.
 
 
 ## Using iStock
@@ -96,7 +164,7 @@ The dashboard provides the following information :
 
 Next, iStock prints dashboard menu.
 
-The user has six options ;
+The user has six options :
 
 1. Add money to the Wallet
 2. Start Trading Stocks

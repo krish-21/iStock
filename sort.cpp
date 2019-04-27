@@ -21,14 +21,15 @@ void sorting()
 	cout<<"4- Number of shares - Descending order"<<endl;
 	cout<<"5- Share Price - Ascending order"<<endl;
 	cout<<"6- Share Price - Descending order"<<endl;
-	cout<<"7- Company Name in aplhabetical order"<<endl;
+	cout<<"7- Company Name in alphabetical order"<<endl;
 	cout<<"---------------------------------------"<<endl;
+	cout<<"8- Exit Current Mode"<<endl;
 	cout<<"Choose a value:"<<endl;
 
 	int n;
 	cin>>n;
 	
-	while(n<1 || n>7)
+	while(n<1 || n>8)
 	{
 		cout<<"Invalid Input"<<endl;
 		cout<<"Enter Number Again:"<<endl;
@@ -137,7 +138,13 @@ void sorting()
 		}
 		print(uservalues,filelength);
 	}
-	delete [] uservalues;s
+	else if(n==8)
+	{
+		delete [] uservalues;
+		cout<<"Exiting Current Mode"<<endl<<endl;
+		return;
+	}
+	delete [] uservalues;
 }
 
 void sortamount(sortuser uservalues[],int length)

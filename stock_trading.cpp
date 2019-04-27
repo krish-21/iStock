@@ -48,6 +48,7 @@ void buy_stock(Investor &user, double stock_array[5], string stock_names[5], int
     user.print_my_stocks();
     cout<<endl<<endl;
 
+    cout<<"                                                      Waller Balance = $ "<<user.get_wallet_balance()<<endl<<endl;
     cout<<"Which stock do you want to buy ?"<<endl<<endl;
     cout<<"Enter the S.No of the corresponding Stock (1-5) :  ";
     cin>>n;
@@ -177,6 +178,7 @@ void sell_stock(Investor &user, double stock_array[5], string stock_names[5], in
     user.print_my_stocks();
     cout<<endl<<endl;
 
+    cout<<"                                                      Waller Balance = $ "<<user.get_wallet_balance()<<endl<<endl;
     cout<<"Which stock do you want to sell ? :   ";
     cin>>n;
     cout<<endl;
