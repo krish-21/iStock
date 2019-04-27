@@ -111,6 +111,10 @@ int main()
                 cout<<endl<<endl<<endl;
                 cout<<"Thank you for using iStock"<<endl<<endl;
                 cout<<"See you again !!!"<<endl<<endl<<endl;
+                
+                
+                remove("records.txt");
+                
                 exit(0);
                 break;
             
