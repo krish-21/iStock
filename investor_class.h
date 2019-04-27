@@ -31,6 +31,8 @@ class Investor
     void sell_my_stock(int, double, double);
 
     void set_no_of_shares(double, double, double, double, double);
+    void set_uid(string);
+    string get_uid();
 
 
     private:
@@ -44,6 +46,8 @@ class Investor
     double temp_transferred_money;
 
     double my_stocks[5];
+
+    string uid;
 
 };
 

@@ -116,3 +116,13 @@ void Investor::set_no_of_shares(double input1, double input2, double input3, dou
     my_stocks[3]=input4;
     my_stocks[4]=input5;
 }
+
+void Investor::set_uid(string input)
+{
+    uid = input;
+}
+
+string Investor::get_uid()
+{
+    return uid;
+}
