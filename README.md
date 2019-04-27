@@ -217,18 +217,18 @@ However, you are required to have [git](https://www.atlassian.com/git/tutorials/
 
 ### Limitations
 
-One of the limitations of iStock is that we assume that the User gives the right type of input. Eg. When iStock asks for an integer, it is assumed that the input provided is an integer. 
-If a character is given as the input, the program fails to check it and unintended results are observed.
+1. One of the limitations of iStock is that we assume that the User gives the right type of input. Eg. When iStock asks for an integer, it is assumed that the input provided is an integer. 
 
-We were working on login/signup function but could not finish it in time so the program deletes all data of the user when the program ends but you cannot edit 
-or delete any of your transaction during the program execution as this can have financial risks.
+2. If a character is given as the input, the program fails to check it and unintended results are observed.
+
+3. A login/signup could have been implemented to store the user data for the next runtime. Unfortunately, that would increase the complexity of the program in multiple ways and the iStock developer team would have needed more time to implement that.
+
 
 ### Assumptions
 
 
-1. We are assuming that the user will enter an integer where an integer value is needed and a character where a character value is needed.
+1. iStock assumes that the user will enter an integer where an integer value is asked and a character where a character value is asked.
 
-2. We are assuming that the credit limit entered by the user will not be over the range of double in C++
+2. iStock assumes that  any input by the user will not be outside the range of double in C++
 
-3. We are assuming that when the program starts, after entering the name, the bank account of the user will automatically get linked to our program as we dont have the data of user's bank account and therefore, there is no way we can confirm and check the password of user's bank account.
-   The money is then automatically transferred from user's bank account when he wants to do stock trading.
+3. iStock assumes that when the User creates his profile, the bank account of the user automatically gets linked to it. The money is then automatically transferred from the User's bank account to trade stocks
