@@ -13,14 +13,14 @@
 Finance is the most important economic sector in Hong Kong. Understanding finance in quintessential to for evryone in  Hong Kong.
 
 
-Finance is broadly divided into 3 primary areas :
+Finance is broadly divided into three primary areas :
 
 1. Corporate Finance
 2. Investments
 3. Financial Markets & Institutions
 
 
-There are 4 different types of Investments each with distinct characteristics, risks and benefits :
+There are four different types of Investments each with distinct characteristics, risks and benefits :
 
 1. Stocks
 2. Property
@@ -37,14 +37,14 @@ Stocks and Stock Markets : (Wikipedia)
 
 Investors around the world study the stock market for several years, and still, none of them has quite mastered it completely.
 
-Anton Chekhov, one of the greatest writers of short fiction in history, has rightly said **"Knowlege is of no value unless you put it into practice"**
+Anton Chekhov, one of the greatest writers of short fiction in history, has rightly said **"Knowlege is of no value unless you put it into practice."**
 
 
 This lack of mastery even after several years of practice could be quite a scary situation for investors who are new to the market. How do investors practice stock trading without actually putting in some money?
 
 This problem is solved by our program **iStock**, a stock market simulator written in C++.
 
-**iStock** lets you trade stocks of 5 tech giants: Alphabet, Apple, Microsoft, Facebook & Amazon.
+**iStock** lets a User trade stocks of 5 tech giants: Alphabet, Apple, Microsoft, Facebook & Amazon.
 
 
 ### Problem Setting
@@ -62,41 +62,41 @@ Problems faced by Investors :
 
 ### Setting the Credit Limit 
 
-- The credit limit is for the financial security of the user and cannot be changed once set. The credit balance refreshes once every five days.
+- The credit limit is for the financial security of the User and cannot be changed once set. The credit balance refreshes once every five days.
 
-- Thus the user will have to wait for the cycle to run its course if the credit limit reached.
+- Thus the User will have to wait for the cycle to run its course if the credit limit reached.
 
 
 ### Adding Money to the Wallet 
 
 - iStock has an in-app wallet through which all transactions must be made.
 
-- The user can add money at any point in the program, but iStock will always check the credit limit
+- The User can add money at any point in the program, but iStock will always check the credit limit
 
 - The added money will get updated to the Wallet Balance.
 
 
 ### Stock Trading Mode
 
-*Buying Mode :*
+**Buying Mode :**
 
 - iStock will first show the current market value of the stocks.
 
-- The current portfolio of the user will also be printed.
+- The current portfolio of the User will also be printed.
 
-- iStock will also show the user the Wallet Balance so that the user can make an informed purchase of stocks. Then, the user can buy stocks of the five tech giants.
+- iStock will also show the User the Wallet Balance so that the User can make an informed purchase of stocks. Then, the User can buy stocks of the five tech giants.
 
-*Selling Mode :*
+**Selling Mode :**
 
 - iStock will first show the current market value of the stocks.
 
-- The current portfolio of the user will also be printed.
+- The current portfolio of the User will also be printed.
 
-- iStock will also show the user the Wallet Balance so that the user can make an informed sale of stocks. Then, the user can sell the stocks the user owns.
+- iStock will also show the User the Wallet Balance so that the User can make an informed sale of stocks. Then, the User can sell the stocks the User owns.
 
 ### Searching Mode 
 
-The user can search transactions from the stored file, records.txt, and choose from six different methods of searching :
+The User can search transactions from the stored file, records.txt, and choose from six different methods of searching :
 
 1. Amount Spent
 2. No. of shares
@@ -107,29 +107,29 @@ The user can search transactions from the stored file, records.txt, and choose f
 
 ### Sorting Mode
 
-The user can sort and print all the transactions made in a specific order and can do so in the following ways :
+The User can sort and print all the transactions made in a specific order and can do so in the following ways :
 
-1.  Amount Spent - Ascending order 
-2.  Amount Spent - Descending order 
+1. Amount Spent - Ascending order 
+2. Amount Spent - Descending order 
 3. Number of shares - Ascending order
 4. Number of shares - Descending order
 5. Share Price - Ascending order
 6. Share Price - Descending order
 7. Company Name in alphabetical order
 
-### Stock History
+### Stock History Mode
 
-- The user can choose a specific company and look at the history of the stocks of the company.
+- The User can choose a specific company and look at the history of the stocks of the company.
 
-- The user can choose how many days back to look up the stock history.
+- The User can choose how many days back to look up the stock history.
 
-### Proceed to next day
+### Proceeding to the Next Day
 
-The user chooses not to take any action and iStock proceeds to the next day. Consequently, the stock price of each company changes too.
+The User chooses not to take any action and iStock proceeds to the next day. Consequently, the stock price of each company changes too.
 
-### Exit the program
+### Exiting iStock
 
-The user chooses to exit iStock. 
+The User chooses to exit iStock. 
 The program comes to an end.
 
 
@@ -146,15 +146,15 @@ The User should first set your credit limit in the beginning.
 
 NOTE: The User cannot change the credit limit at any point for financial safety. Thus, the User should be careful when setting the limit. (recommended  to be at least 10000 USD)
 
-The User should enter a positive number. If the input isn't a positive number, iStock will ask the user for another input.
+The User should enter a positive number. If the input isn't a positive number, iStock will ask the User for another input.
 
-Then, iStock proceeds to the Dashboard, the place for all the information to be displayed for the user.
+Then, iStock proceeds to the Dashboard, the place for all the information to be displayed for the User.
 
 The dashboard provides the following information :
 
-- The User's Net Worth - The total money, the user has in the stock market. It is calculated by multiplying the number of stocks the user owns multiplied by the current market of value of the corresponding stock.
+- The User's Net Worth - The total money, the User has in the stock market. It is calculated by multiplying the number of stocks the User owns multiplied by the current market of value of the corresponding stock.
 
-- The Stocks owned by the user
+- The Stocks owned by the User
 
 - The User's Wallet Balance - The money currently present in the in-program wallet.
 
@@ -164,7 +164,7 @@ The dashboard provides the following information :
 
 Next, iStock prints dashboard menu.
 
-The user has six options :
+The User has six options :
 
 1. Add money to the Wallet
 2. Start Trading Stocks
@@ -174,13 +174,13 @@ The user has six options :
 5. Exit iStock
 
 
-After the user finished the day's work, the user can proceed to the next day.
+After the User finished the day's work, the User can proceed to the next day.
 
-Proceeding to the next day means that the stock of each company changes at the end of each day, thus changing the user's net worth too.
+Proceeding to the next day means that the stock of each company changes at the end of each day, thus changing the User's net worth too.
 
-iStock again prints the dashboard for the user to do the necessary.
+iStock again prints the dashboard for the User to do the necessary.
 
-iStock keeps running until the user chooses the fifth option to exit.
+iStock keeps running until the User chooses the fifth option to exit.
 
 
 
@@ -191,19 +191,19 @@ Using iStock is a simple task for anyone with a Unix-based terminal. Follow the 
 However, you are required to have [git](https://www.atlassian.com/git/tutorials/install-git), [g++ compiler](https://www.cs.odu.edu/~zeil/cs250PreTest/latest/Public/installingACompiler/), and [make](https://www.gnu.org/software/make/) installed.
 
 
-1.Clone this GitHub repo.
+1. Clone this GitHub repo.
 
 `git clone https://github.com/krish-21/iStock.git`
 
-2.Go into the project root directory.
+2. Go into the project root directory.
 
 `cd iStock`
 
-3.Build the main program using make. *Our makefile defaults to compiling main.cpp.*
+3. Build the main program using make. *Our makefile defaults to compiling main.cpp.*
 
 `make`
 
-4.Start running iStock.
+4. Start running iStock.
 
 `./main`
 
@@ -211,5 +211,5 @@ However, you are required to have [git](https://www.atlassian.com/git/tutorials/
 ## Limitations and Improvements
 
 
-One of the limitations of iStock is that we assume that the user gives the right type of input. Eg. When iStock asks for an integer, it is assumed that the input provided is an integer. 
+One of the limitations of iStock is that we assume that the User gives the right type of input. Eg. When iStock asks for an integer, it is assumed that the input provided is an integer. 
 If a character is given as the input, the program fails to check it and unintended results are observed.
