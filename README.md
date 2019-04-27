@@ -133,6 +133,7 @@ The User chooses not to take any action and iStock proceeds to the next day. Con
 
 The User chooses to exit iStock. 
 The program comes to an end.
+When the program ends, all the data of the user is deleted.
 
 
 ## Using iStock
@@ -218,6 +219,9 @@ However, you are required to have [git](https://www.atlassian.com/git/tutorials/
 
 One of the limitations of iStock is that we assume that the User gives the right type of input. Eg. When iStock asks for an integer, it is assumed that the input provided is an integer. 
 If a character is given as the input, the program fails to check it and unintended results are observed.
+
+We were working on login/signup function but could not finish it in time so the program deletes all data of the user when the program ends but you cannot edit 
+or delete any of your transaction during the program execution as this can have financial risks.
 
 ### Assumptions
 
