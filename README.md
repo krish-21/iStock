@@ -212,8 +212,11 @@ However, you are required to have [git](https://www.atlassian.com/git/tutorials/
     `./main`
 
 
-## Limitations and Improvements
+## Limitations and Assumptions
 
+### Limitations
 
 One of the limitations of iStock is that we assume that the User gives the right type of input. Eg. When iStock asks for an integer, it is assumed that the input provided is an integer. 
 If a character is given as the input, the program fails to check it and unintended results are observed.
+
+### Assumptions
