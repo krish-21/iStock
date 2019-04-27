@@ -220,3 +220,11 @@ One of the limitations of iStock is that we assume that the User gives the right
 If a character is given as the input, the program fails to check it and unintended results are observed.
 
 ### Assumptions
+
+
+1. We are assuming that the user will enter an integer where an integer value is needed and a character where a character value is needed.
+
+2. We are assuming that the credit limit entered by the user will not be over the range of double in C++
+
+3. We are assuming that when the program starts, after entering the name, the bank account of the user will automatically get linked to our program as we dont have the data of user's bank account and therefore, there is no way we can confirm and check the password of user's bank account.
+   The money is then automatically transferred from user's bank account when he wants to do stock trading.
